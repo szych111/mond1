@@ -61,7 +61,7 @@ header::after {
 
 .switch-btn {
   position: absolute;
-  bottom: 5%;
+  bottom: 8%;
   margin: auto;
   width: 5.5rem;
   height: 1.8rem;
@@ -79,11 +79,11 @@ header::after {
   font-size: 0.9rem;
   cursor: pointer;
   text-transform: capitalize;
+  padding-left: 0.1rem;
 }
 
-.pause {
-  display: inline-block;
-  margin-left: 1rem;
+span.pause {
+  padding-left: 1rem;
 }
 
 .switch {

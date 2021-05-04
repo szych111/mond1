@@ -18,3 +18,12 @@ const preloader = document.querySelector('.preloader')
 window.addEventListener('load', function(){
     preloader.classList.add('hide-preloader')
 })
+
+//modal 
+
+const closeBtn = document.querySelector('.close-btn')
+const contactModal = document.querySelector('.modal');
+
+closeBtn.addEventListener('click', () => {
+    contactModal.classList.add('close-modal')
+})

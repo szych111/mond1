@@ -1,0 +1,20 @@
+.contact-modal {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.contact-modal > div {
+    flex-basis: 40%;
+    flex-grow: 0;
+    margin: 2rem;
+    background-color: pink;
+}
+
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+}

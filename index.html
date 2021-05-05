@@ -21,7 +21,12 @@
         <video class="video-container" playsinline muted autoplay loop>
             <source src="pexels-taryn-elliott-5665029.mp4" type="video/mp4">
         </video>
-        <!-- <h1>Mondestate</h1> -->
+        <nav>
+            <ul class="nav-menu">
+                <li id="services-open">Usługi</li>
+                <li id="contact-open">Kontakt</li>
+            </ul>
+        </nav>
         <div class="homepage-logo">
             <img src="img/Mondestate-logo-white-orange-RGB-on-transparent-bckgrnd-01.png" alt="logo">
         </div>
@@ -32,24 +37,40 @@
         </button>
     </header>
     <div class="contact-modal modal">
-        <button class="close-btn">
+        <div class="modal-logo">
+            <img src="./img/Mondestate-logo-white-orange-RGB-on-transparent-bckgrnd-01.png" alt="logo">
+        </div>
+        <button class="close-btn" id="contact-close">
             <i class="fas fa-times"></i>
         </button>
-        <div class="contact-data">
-            <p>Mondestate</p>
-            <p>ul. Lipowa</p>
-            <p>Warszawa</p>
-            <p>telefon</p>
-            <p ></p>
-        </div>
-        <div class="contact-form">
-            <input type="text" placeholder="Imię">
-            <input type="text" placeholder="Nazwisko">
-            <input type="mail" placeholder="Email">
-            <textarea name="" id="" cols="30" rows="10" placeholder="Wiadomość"></textarea>
+        <div class="contact-container">
+            <div class="contact-data">
+                <address>
+                    Mondestate<br>
+                    ul. Lipowa 23<br>
+                    Warszawa<br>
+                    <p>Tel. <a href="tel:+48606662589">+48 606 662 589</a></p>
+                    E-mail: biuro@mondestate.pl
+                </address>
+                
+            </div>
+            <div class="contact-form">
+                <input type="text" placeholder="Imię">
+                <input type="text" placeholder="Nazwisko">
+                <input type="mail" placeholder="Email">
+                <textarea name="" id="" cols="30" rows="10" placeholder="Wiadomość"></textarea>
+                <button type="submit" class="btn">Wyślij</submit>
+            </div>
         </div>
     </div>
-
+    <div class="services-modal modal">
+        <div class="modal-logo">
+            <img src="./img/Mondestate-logo-white-orange-RGB-on-transparent-bckgrnd-01.png" alt="logo">
+        </div>
+        <button class="close-btn" id="services-close">
+            <i class="fas fa-times"></i>
+        </button>
+    </div>
     <script src="js/main.js"></script>
 </body>
 

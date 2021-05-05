@@ -1,5 +1,11 @@
 @import 'colors';
 @import 'contact';
+@import 'nav';
+
+@font-face {
+  font-family: Hellix;
+  src: url(../fonts/Hellix-Regular.otf);
+}
 
 * {
     box-sizing: border-box;
@@ -19,10 +25,14 @@ img {
     max-width: 60vw;
 }
 
-body {
-    font-family: 'Lato', sans-serif;
+body, a {
+    font-family: Hellix, sans-serif;
     color: white;
     margin: 0;
+}
+
+a {
+    text-decoration: none;
 }
 
 :root {
@@ -33,9 +43,9 @@ header {
     min-height: 100vh;
     position: relative;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    place-items: center;
 }
 
 .video-container {
@@ -133,27 +143,15 @@ span.pause {
     left: 0;
     height: 100vh;
     width: 100vw;
-    background-color: $base-grey;
-    color: $base-coral;
+    background-color: rgba($base-grey, 0.9);
     transition: var(--transition);
-    visibility: visible;
-    z-index: 10;
-}
-
-.contact-modal {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.modal > div {
-    flex-basis: 100%;
-    flex-grow: 1;
-    margin: 2rem;
-}
-
-.close-modal {
     visibility: hidden;
     z-index: -10;
+}
+
+.open-modal {
+    visibility: visible;
+    z-index: 10;
   }
 
 .close-btn {
@@ -167,7 +165,8 @@ span.pause {
     cursor: pointer;
     transition: var(--transition);
   }
+
   .close-btn:hover {
-    color: var(--clr-red-light);
+    color: white;
     transform: scale(1.3);
   }

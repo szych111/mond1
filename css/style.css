@@ -10,7 +10,7 @@
   flex-direction: column;
   flex-grow: 1;
   flex-basis: 40%;
-  margin: 1rem;
+  margin-bottom: 1rem;
 }
 
 .contact-data {
@@ -25,6 +25,7 @@ address {
 
 .contact-form {
   max-width: 400px;
+  padding: 0 5vw;
 }
 
 .contact-form > * {
@@ -113,7 +114,7 @@ li:hover, li:focus {
   font-size: 1.2rem;
   background: transparent;
   border-color: transparent;
-  color: green;
+  color: #f57d58;
   cursor: pointer;
   transition: var(--transition);
 }

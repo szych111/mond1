@@ -1,12 +1,14 @@
-const btn = document.querySelector('.switch-btn')
+// video-switch 
+
+const videoBtn = document.querySelector('.video-btn')
 const video = document.querySelector('.video-container')
 
-btn.addEventListener('click', function(){
-    if(!btn.classList.contains('slide')) {
-        btn.classList.add('slide')
+videoBtn.addEventListener('click', function(){
+    if(!videoBtn.classList.contains('slide')) {
+        videoBtn.classList.add('slide')
         video.pause()
     } else {
-        btn.classList.remove('slide')
+        videoBtn.classList.remove('slide')
         video.play()
     }
 })
@@ -23,12 +25,15 @@ window.addEventListener('load', function(){
 const openContact = document.getElementById('contact-open')
 const contactClose = document.getElementById('contact-close')
 const contactModal = document.querySelector('.contact-modal')
+const homepage = document.querySelector('.homepage-content')
 
 openContact.addEventListener('click', () => {
     contactModal.classList.add('open-modal')
+    homepage.classList.add('homepage-lessvisible')
 })
 contactClose.addEventListener('click', () => {
     contactModal.classList.remove('open-modal')
+    homepage.classList.remove('homepage-lessvisible')
 })
 
 //services-modal 

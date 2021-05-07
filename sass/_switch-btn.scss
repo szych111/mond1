@@ -1,0 +1,64 @@
+.btn {
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+.contact-form-btn {
+    background-color: $base-coral;
+    border-radius: 3px;
+    width: 8em;
+    margin: 0 auto;
+    color: white;
+}
+
+.video-btn {
+    position: relative;
+    width: 7rem;
+    height: 1.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+}
+
+.video-span {
+    padding-left: 0;
+    color: rgb(56, 54, 54);
+}
+
+.video-switch {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 5px;
+    background: $base-coral;
+}
+
+.video-btn span {
+    display: inline-block;
+    font-size: 0.9rem;
+    text-transform: capitalize;
+}
+
+span.pause {
+    padding-left: 1rem;
+}
+
+.switch {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: $base-coral;
+    border-radius: 5px;
+}
+
+.slide .video-switch {
+    left: 50%;
+}

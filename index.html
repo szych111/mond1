@@ -5,11 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet"> 
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/> -->
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/88beb0a41d.js" crossorigin="anonymous"></script>
     <title>MONDESTATE</title>
 </head>
 
@@ -21,33 +19,34 @@
         <video class="video-container" playsinline muted autoplay loop>
             <source src="pexels-taryn-elliott-5665029.mp4" type="video/mp4">
         </video>
-        <nav>
-            <ul class="nav-menu">
-                <li id="services-open">Usługi</li>
-                <li id="contact-open">Kontakt</li>
-            </ul>
-        </nav>
-        <div class="homepage-logo">
-            <img src="img/Mondestate-logo-white-orange-RGB-on-transparent-bckgrnd-01.png" alt="logo">
+        <div class="flex-container homepage-content">
+            <nav>
+                <ul class="nav-menu">
+                    <li id="services-open">Usługi</li>
+                    <li id="contact-open">Kontakt</li>
+                </ul>
+            </nav>
+            <div class="homepage-logo">
+                <img src="img/Mondestate-logo-white-orange-RGB-on-transparent-bckgrnd-01.png" alt="logo">
+            </div>
+            <button class="btn video-btn">
+                <span class="video-span">play</span>
+                <span class="video-span video-pause">pause</span>
+                <span class="video-span video-switch"></span>
+            </button>
         </div>
-        <button class="switch-btn">
-            <span>play</span>
-            <span class="pause">pause</span>
-            <span class="switch"></span>
-        </button>
     </header>
     <div class="contact-modal modal">
-        <div class="modal-logo">
-            <img src="./img/Mondestate-logo-white-orange-RGB-on-transparent-bckgrnd-01.png" alt="logo">
-        </div>
         <button class="close-btn" id="contact-close">
             <i class="fas fa-times"></i>
         </button>
-        <div class="contact-container">
+        <div class="flex-container contact-content">
             <div class="contact-data">
+                <div class="modal-logo">
+                    <img src="./img/Mondestate-logo-white-orange-RGB-on-transparent-bckgrnd-01.png" alt="logo">
+                </div>
                 <address>
-                    Mondestate<br>
-                    ul. Lipowa 23<br>
+                    ul. Lipowa 123<br>
                     Warszawa<br>
                     <p>Tel. <a href="tel:+48606662589">+48 606 662 589</a></p>
                     E-mail: biuro@mondestate.pl
@@ -59,17 +58,17 @@
                 <input type="text" placeholder="Nazwisko">
                 <input type="mail" placeholder="Email">
                 <textarea name="" id="" cols="30" rows="10" placeholder="Wiadomość"></textarea>
-                <button type="submit" class="btn">Wyślij</submit>
+                <button type="submit" class="btn contact-form-btn">Wyślij</submit>
             </div>
         </div>
     </div>
     <div class="services-modal modal">
-        <div class="modal-logo">
-            <img src="./img/Mondestate-logo-white-orange-RGB-on-transparent-bckgrnd-01.png" alt="logo">
-        </div>
         <button class="close-btn" id="services-close">
             <i class="fas fa-times"></i>
         </button>
+        <div class="flex-container services-content">
+            <h1>our services</h1>
+        </div>
     </div>
     <script src="js/main.js"></script>
 </body>

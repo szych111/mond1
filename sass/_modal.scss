@@ -20,9 +20,9 @@
 
 .close-btn {
     position: absolute;
-    top: 1rem;
-    right: 1rem;
-    font-size: 2rem;
+    top: 1vh;
+    right: 1vh;
+    font-size: 1.2rem;
     background: transparent;
     border-color: transparent;
     color: $base-coral;
@@ -33,4 +33,10 @@
   .close-btn:hover {
     color: white;
     transform: scale(1.3);
+  }
+
+  @media (min-width: 800px) {
+    .close-btn {
+      font-size: 2rem;
+    }
   }

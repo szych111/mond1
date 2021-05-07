@@ -8,6 +8,7 @@
 .contact-content > div {
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
     flex-basis: 40%;
     margin: 1rem;
 
@@ -47,5 +48,9 @@ address {
 
     .contact-form > * {
         font-size: 1rem;
+    }
+
+    .contact-content > div {
+        flex-grow: 0;
     }
 }

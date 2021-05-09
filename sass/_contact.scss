@@ -5,26 +5,34 @@
     background-color: $base-grey;
 }
 
-.contact-content > div {
+.contact-content > * {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
     flex-basis: 40%;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
 .contact-data {
     align-items: center;
     font-size: 0.8rem;
     line-height: 1.5;
-}
-
-address {
     text-align: center;
 }
 
+address {
+    margin-bottom: 1rem;
+}
+
+.contact-staff {
+    background-color: rgba($base-coral, 0.4);
+    padding: 0.5em 1em;
+    margin-bottom: 1em;
+
+}
+
 .contact-form {
-    max-width: 400px;
+    max-width: 600px;
     padding: 0 5vw;
 }
 
@@ -36,7 +44,7 @@ address {
 }
 
 ::placeholder {
-    font-family: 'Hellix Medium';
+    font-family: 'Hellix Thin', sans-serif;
     color: $base-coral;
     opacity: 0.8;
 }
@@ -50,7 +58,7 @@ address {
         font-size: 1rem;
     }
 
-    .contact-content > div {
+    .contact-content > * {
         flex-grow: 0;
     }
 }

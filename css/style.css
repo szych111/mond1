@@ -5,26 +5,33 @@
   background-color: #3b3b3b;
 }
 
-.contact-content > div {
+.contact-content > * {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
   flex-basis: 40%;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 .contact-data {
   align-items: center;
   font-size: 0.8rem;
   line-height: 1.5;
-}
-
-address {
   text-align: center;
 }
 
+address {
+  margin-bottom: 1rem;
+}
+
+.contact-staff {
+  background-color: rgba(245, 125, 88, 0.4);
+  padding: 0.5em 1em;
+  margin-bottom: 1em;
+}
+
 .contact-form {
-  max-width: 400px;
+  max-width: 600px;
   padding: 0 5vw;
 }
 
@@ -36,7 +43,7 @@ address {
 }
 
 ::placeholder {
-  font-family: 'Hellix Medium';
+  font-family: 'Hellix Thin', sans-serif;
   color: #f57d58;
   opacity: 0.8;
 }
@@ -48,7 +55,7 @@ address {
   .contact-form > * {
     font-size: 1rem;
   }
-  .contact-content > div {
+  .contact-content > * {
     flex-grow: 0;
   }
 }
@@ -74,7 +81,7 @@ nav > ul {
 }
 
 .nav-menu > * + * {
-  margin-left: 2.5vh;
+  margin-left: 0.8em;
 }
 
 li {
@@ -204,7 +211,7 @@ span.pause {
 
 @font-face {
   font-family: Hellix;
-  src: url(../fonts/Hellix-Regular.otf);
+  src: url(../fonts);
 }
 
 :root {
@@ -307,7 +314,7 @@ header::after {
   display: flex;
   align-items: center;
   width: 95vw;
-  max-width: 1400px;
+  max-width: 1600px;
   margin: 0 auto;
 }
 
@@ -315,9 +322,5 @@ header::after {
   flex-direction: column;
   justify-content: space-between;
   min-height: 90vh;
-}
-
-.homepage-lessvisible {
-  opacity: 0.5;
 }
 /*# sourceMappingURL=style.css.map */

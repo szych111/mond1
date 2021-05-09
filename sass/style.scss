@@ -7,7 +7,7 @@
 
 @font-face {
   font-family: Hellix;
-  src: url(../fonts/Hellix-Regular.otf);
+  src: url(../fonts);
 }
 
 :root {
@@ -110,7 +110,7 @@ header::after {
     display: flex;
     align-items: center;
     width: 95vw;
-    max-width: 1400px;
+    max-width: 1600px;
     margin: 0 auto;
 }
 
@@ -119,9 +119,4 @@ header::after {
     justify-content: space-between;
     min-height: 90vh;
 }
-
-.homepage-lessvisible {
-    opacity: 0.5;
-}
-
 

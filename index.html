@@ -22,7 +22,7 @@
         <div class="flex-container homepage-content">
             <nav>
                 <ul class="nav-menu">
-                    <li id="services-open">Usługi</li>
+                    <!-- <li id="services-open">Usługi</li> -->
                     <li id="contact-open">Kontakt</li>
                 </ul>
             </nav>
@@ -36,7 +36,7 @@
             </button>
         </div>
     </header>
-    <div class="contact-modal modal open-modal">
+    <div class="contact-modal modal">
         <button class="close-btn" id="contact-close">
             <i class="fas fa-times"></i>
         </button>
@@ -45,32 +45,35 @@
                 <div class="modal-logo">
                     <img src="./img/Mondestate-logo-white-orange-RGB-on-transparent-bckgrnd-01.png" alt="logo">
                 </div>
+                <div class="contact-staff">
+                    <p>Patrycja Pisklewicz, Dyrektor Biura</p>
+                    <p>Marek Skiba, Doradca ds. Nieruchomości</p>
+                </div>
                 <address>
-                    ul. Lipowa 123<br>
-                    Warszawa<br>
-                    <p>Tel. <a href="tel:+48606662589">+48 606 662 589</a></p>
-                    E-mail: biuro@mondestate.pl
+                    ul. Sowińskiego 25/282<br>
+                    01 - 106 Warszawa<br>
+                    <p>Tel. <a href="tel:+48...">+48 ...</a></p>
+                    E-mail: ...@mondestate.pl
                 </address>
-                
             </div>
-            <div class="contact-form">
+            <form class="contact-form">
                 <input type="text" placeholder="Imię">
                 <input type="text" placeholder="Nazwisko">
-                <input type="mail" placeholder="Email">
-                <textarea name="" id="" cols="30" rows="10" placeholder="Wiadomość"></textarea>
-                <button type="submit" class="btn contact-form-btn">Wyślij</submit>
+                <input type="email" placeholder="E-mail">
+                <textarea name="contact-form-message" id="contact-form-message" cols="30" rows="10" placeholder="Wiadomość"></textarea>
+                <button type="submit" class="btn contact-form-btn">Wyślij</button>
+            </form>
+        </div>
+        </div>
+        <!-- <div class="services-modal modal">
+            <button class="close-btn" id="services-close">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="flex-container services-content">
+                <h1>our services</h1>
             </div>
-        </div>
-    </div>
-    <div class="services-modal modal">
-        <button class="close-btn" id="services-close">
-            <i class="fas fa-times"></i>
-        </button>
-        <div class="flex-container services-content">
-            <h1>our services</h1>
-        </div>
-    </div>
-    <script src="js/main.js"></script>
+        </div> -->
+        <script src="js/main.js"></script>
 </body>
 
 </html>

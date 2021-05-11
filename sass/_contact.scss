@@ -20,13 +20,17 @@
     text-align: center;
 }
 
+.contact-data p:nth-child(2) {
+    margin-bottom: 0.5em;
+}
+
 address {
     margin-bottom: 1rem;
 }
 
 .contact-staff {
     background-color: rgba($base-coral, 0.4);
-    padding: 0.5em 1em;
+    padding: 1em 1.2em;
     margin-bottom: 1em;
 
 }

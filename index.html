@@ -47,22 +47,25 @@
                 </div>
                 <div class="contact-staff">
                     <p>Patrycja Pisklewicz, Dyrektor Biura</p>
+                    <p>Tel. <a href="tel:+48789108468">+48 789 108 468</a></p>
                     <p>Marek Skiba, Doradca ds. Nieruchomości</p>
+                    <p>Tel. <a href="tel:+48789053392">+48 789 053 392</a></p>
                 </div>
                 <address>
                     ul. Sowińskiego 25/282<br>
                     01 - 106 Warszawa<br>
-                    <p>Tel. <a href="tel:+48...">+48 ...</a></p>
-                    E-mail: ...@mondestate.pl
+                    E-mail: biuro@mondestate.pl
                 </address>
             </div>
-            <form class="contact-form">
-                <input type="text" placeholder="Imię">
-                <input type="text" placeholder="Nazwisko">
-                <input type="email" placeholder="E-mail">
-                <textarea name="contact-form-message" id="contact-form-message" cols="30" rows="10" placeholder="Wiadomość"></textarea>
+            <form class="contact-form" action="https://formspree.io/f/xqkwpkny" method="POST">
+                <input type="text" name='first-name' placeholder="Imię">
+                <input type="text" name='last-name' placeholder="Nazwisko">
+                <input type="email" name="_replyto" placeholder="E-mail">
+                <textarea name="message" cols="30" rows="10" placeholder="Wiadomość"></textarea>
                 <button type="submit" class="btn contact-form-btn">Wyślij</button>
             </form>
+
+            
         </div>
         </div>
         <!-- <div class="services-modal modal">

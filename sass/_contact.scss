@@ -8,27 +8,26 @@
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-    margin: 0 1rem 1rem;
+    margin: 0 1rem;
     max-width: 40%;
     min-width: 280px;
 }
 
 .contact-data {
     align-items: center;
-    //min-width: 45ch;
     font-size: 0.8rem;
     line-height: 1.5;
     text-align: center;
 }
 
 .contact-logo {
-    max-width: 90%;
+    max-width: 85%;
 }
 
 .contact-staff {
-    background-color: rgba($base-coral, 0.4);
-    padding: 1em 1.2em;
-    margin-bottom: 1em;
+    background-color: rgba($base-coral, 0.5);
+    padding: 0.8em 1.2em;
+    margin-bottom: 0.8em;
 }
 
 .contact-staff p:nth-child(2) {
@@ -41,14 +40,14 @@ address {
 
 .contact-form {
     max-width: 600px;
+    margin-bottom: 3vh;
 }
 
 .contact-form > * {
     line-height: 0.8;
     margin-bottom: 1vh;
-    padding: 0.5em;
+    padding: 0.2em 0.4em;
     border: none;
-    
 }
 
 ::placeholder {

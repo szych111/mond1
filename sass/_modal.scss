@@ -9,8 +9,6 @@
     visibility: hidden;
     z-index: -10;
     display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .open-modal {
@@ -36,6 +34,9 @@
   }
 
   @media (min-width: 800px) {
+    .modal {
+      align-items: center;
+    }
     .close-btn {
       font-size: 2rem;
       color: $base-coral;

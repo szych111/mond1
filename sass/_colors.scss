@@ -1,2 +1,13 @@
 $base-grey: rgb(59, 59, 59);
 $base-coral: rgb(245, 125, 88);
+
+:root {
+    --gradient: linear-gradient(60deg, 
+rgba(126, 104, 43, 0.5), 
+rgba(126, 104, 43, 0.5),
+rgba(126, 104, 43, 0.5),
+rgba(129, 81, 35, 0.5), 
+rgba(185, 115, 50, 0.5), 
+rgba(94, 83, 23, 0.5));
+
+}

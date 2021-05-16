@@ -15,18 +15,22 @@
 }
 
 .video-btn {
+    align-self: flex-end;
     position: relative;
-    width: 7rem;
+    width: 4.5rem;
     height: 1.8rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: white;
+    background-color: rgba($base-grey, 0.8);
 }
 
 .video-span {
     padding-left: 0;
-    color: rgb(56, 54, 54);
+    display: inline-block;
+    font-size: 0.9rem;
+    text-transform: capitalize;
+    color: rgb(255, 255, 255);
 }
 
 .video-switch {
@@ -36,27 +40,12 @@
     top: 0;
     left: 0;
     border-radius: 5px;
-    background: $base-coral;
-}
-
-.video-btn span {
-    display: inline-block;
-    font-size: 0.9rem;
-    text-transform: capitalize;
+    //background: $base-coral;
+    background: rgba(255, 255, 255, 0.781);
 }
 
 span.pause {
     padding-left: 1rem;
-}
-
-.switch {
-    position: absolute;
-    width: 50%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background: $base-coral;
-    border-radius: 5px;
 }
 
 .slide .video-switch {

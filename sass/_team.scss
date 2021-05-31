@@ -1,0 +1,119 @@
+.team {
+    padding: 0 5vw;
+    //background-color: green;
+}
+
+.team__intro {
+    display: flex;
+    // background-color: pink;
+    // h1 {
+    //     background-color: cadetblue;
+    // }
+}
+
+.intro__text {
+    //background-color: blue;
+    font-size: 1.2rem;
+    font-family: 'Hellix Thin';
+    font-style: italic;
+    padding: 0 3vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.team-members {
+    display: flex;
+    flex-direction: column;
+}
+
+.team__card {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    position: relative;
+    //max-width: 300px;
+    background-color: $base-coral;
+    padding: 2vw;
+    margin-bottom: 2em;
+    min-width: 45%;
+}
+
+.team-member {
+    display: flex;
+    flex-direction: column;
+}
+
+.team-member > * {
+    flex-basis: 100%;
+    font-style: italic;
+}
+
+.team-member__img {
+    flex-basis: 100%;
+
+    img {
+        max-width: 60vw;
+    }
+}
+
+.team-member__story {
+    flex-basis: 100%;
+    font-style: italic;
+    padding: 1em;
+}
+
+.team-member__label {
+    position: absolute;
+    bottom: 30%;
+    background-color: $base-grey;
+    min-width: 220px;
+    padding: 0.3em 1em;
+
+    p {
+        line-height: 1.5;
+    }
+
+    span {
+        text-transform: uppercase;
+    }
+}
+
+@media (min-width: 600px) {
+    .team-member {
+        flex-direction: row;
+    }
+
+    .team-member__label {
+        bottom: 15%;
+        left: 25%;
+    }
+
+    .team-member > * + * {
+        margin-left: 1em;
+    }
+    
+}
+
+@media (min-width: 900px) {
+    .team-members {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .team-members > * + * {
+        margin-left: 2vw;
+    }
+
+    .intro__text {
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .team-member__story {
+        font-size: 1.2rem;
+        line-height: 1.2;
+    }
+
+}

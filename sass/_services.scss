@@ -1,5 +1,52 @@
-.services-content {
+.services {
+    margin: 5vh 10vw;
+}
+
+.services--logo {
+    display: flex;
     flex-direction: column;
-    justify-content: center;
+}
+
+.services__subtitle--container {
+    display: flex;
+}
+
+.services-logo-subtitle {
+    text-transform: uppercase;
+    font-family: 'Hellix Thin';
+    font-size: 3vw;
+    display: inline-block;
+}
+
+.services__intro__arrows {
+    
+    img {        
+        width: 5vw;
+        transform: rotate(45deg);
+        display: inline-block;
+    }
+}
+
+.services__cards {
+    display: flex;
+    flex-direction: row;
+
+    * + * {
+        margin-left: 2vw;
+    }
+}
+
+.services--card {
     background-color: $base-grey;
+    padding: 1em;
+    box-shadow: 10px 10px 10px 1px $base-grey;
+}
+
+.services--card__img {
+    width: 2em;
+    background-color: pink;
+}
+
+.services--card__text {
+    background-color: green;
 }

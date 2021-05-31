@@ -2,7 +2,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    height: 100vh;
+    height: fit-content;
     width: 100vw;
     background-color: rgba($base-grey, 1);
     transition: var(--transition);
@@ -36,6 +36,7 @@
   @media (min-width: 800px) {
     .modal {
       align-items: center;
+      height: 100vh;
     }
     .close-btn {
       font-size: 2rem;

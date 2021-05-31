@@ -120,7 +120,7 @@ li:hover, li:focus {
   position: fixed;
   top: 0;
   left: 0;
-  height: 100vh;
+  height: fit-content;
   width: 100vw;
   background-color: #3b3b3b;
   transition: var(--transition);
@@ -154,6 +154,7 @@ li:hover, li:focus {
 @media (min-width: 800px) {
   .modal {
     align-items: center;
+    height: 100vh;
   }
   .close-btn {
     font-size: 2rem;
@@ -214,10 +215,54 @@ span.pause {
   left: 50%;
 }
 
-.services-content {
+.services {
+  margin: 5vh 10vw;
+}
+
+.services--logo {
+  display: flex;
   flex-direction: column;
-  justify-content: center;
+}
+
+.services__subtitle--container {
+  display: flex;
+}
+
+.services-logo-subtitle {
+  text-transform: uppercase;
+  font-family: 'Hellix Thin';
+  font-size: 3vw;
+  display: inline-block;
+}
+
+.services__intro__arrows img {
+  width: 5vw;
+  transform: rotate(45deg);
+  display: inline-block;
+}
+
+.services__cards {
+  display: flex;
+  flex-direction: row;
+}
+
+.services__cards * + * {
+  margin-left: 2vw;
+}
+
+.services--card {
   background-color: #3b3b3b;
+  padding: 1em;
+  box-shadow: 10px 10px 10px 1px #3b3b3b;
+}
+
+.services--card__img {
+  width: 2em;
+  background-color: pink;
+}
+
+.services--card__text {
+  background-color: green;
 }
 
 .section--bcg {

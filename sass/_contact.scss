@@ -1,7 +1,11 @@
 .contact-content {
+    display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    width: 95vw;
+    max-width: 1600px;
+    margin: 10vh auto;
 }
 
 .contact-content > * {
@@ -39,7 +43,7 @@ address {
 }
 
 .contact-form {
-    max-width: 600px;
+    max-width: 400px;
     margin-bottom: 5vh;
 }
 
@@ -66,8 +70,17 @@ address {
 }
 
 @media (min-width: 1000px) {
+
+    .contact-content {
+        margin: 10vh auto;
+    }
+
     .contact-data {
         font-size: 1.2rem;
+    }
+
+    .contact-form {
+        max-width: 600px;
     }
 
     .contact-form > * {

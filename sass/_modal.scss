@@ -5,10 +5,8 @@
     min-height: 100vh;
     width: 100vw;
     background-color: rgba($base-grey, 1);
-    transition: var(--transition);
     visibility: hidden;
     z-index: -10;
-    overflow-y: auto;
 }
 
 .open-modal {

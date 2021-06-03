@@ -256,15 +256,21 @@ span.pause {
   box-shadow: 10px 10px 10px 1px #3b3b3b;
 }
 
-.services--card__img {
+.services--card img {
+  margin-bottom: 1em;
   width: 2em;
-  margin-bottom: 0.5em;
 }
 
 @media (min-width: 600px) {
   .services {
     margin: 7vw auto;
     max-width: 95%;
+  }
+}
+
+@media (min-width: 900px) {
+  .services {
+    max-width: 70%;
   }
   .services__intro {
     margin-bottom: 10vh;
@@ -273,28 +279,16 @@ span.pause {
     flex-direction: row;
   }
   .services__cards > * + * {
-    margin-left: 3vw;
+    margin-left: 2vw;
   }
   .services--card {
-    min-width: 200px;
     font-size: 1rem;
-  }
-  .services--card img {
-    margin-bottom: 1em;
   }
 }
 
-@media (min-width: 900) {
-  .services {
-    margin: 7vw auto;
-    max-width: 70%;
-  }
+@media (min-width: 1200px) {
   .services--card {
-    min-width: 250px;
     font-size: 1.2rem;
-  }
-  .services--card img {
-    margin-bottom: 1em;
   }
 }
 

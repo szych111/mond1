@@ -6,48 +6,23 @@
     cursor: pointer;
 }
 
-.contact-form-btn {
-    background-color: $base-coral;
-    border-radius: 3px;
-    width: 8em;
-    margin: 0 auto;
-    color: white;
-}
-
 .video-btn {
-    align-self: flex-end;
-    position: relative;
-    width: 4.5rem;
-    height: 1.8rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: rgba($base-grey, 0.8);
+    text-transform: lowercase;
+    color: rgba($base-coral, 0.8);
+    font-size: 1.2rem;
+    font-weight: 700;
+    background-color: rgba(rgb(59, 56, 56), 0);
+    padding: 0.5em 1em;
+    transition: 1000ms;
+
+    span {
+        margin: 0 0.2em;
+        font-size: 1.2rem;
+    }
 }
 
-.video-span {
-    padding-left: 0;
-    display: inline-block;
-    font-size: 0.9rem;
-    text-transform: capitalize;
-    color: rgb(255, 255, 255);
-}
-
-.video-switch {
-    position: absolute;
-    width: 50%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    border-radius: 5px;
-    //background: $base-coral;
-    background: rgba(255, 255, 255, 0.781);
-}
-
-span.pause {
-    padding-left: 1rem;
-}
-
-.slide .video-switch {
-    left: 50%;
+.video-btn-inactive {
+    color: rgba(white, 0.3);
+    font-size: 0.8rem;
+    cursor: default;
 }

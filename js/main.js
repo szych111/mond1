@@ -1,16 +1,19 @@
-// video-switch 
+// video-btn 
 
-const videoBtn = document.querySelector('.video-btn')
+const videoOn = document.querySelector('.video-on')
+const videoOff = document.querySelector('.video-off')
 const video = document.querySelector('.video-container')
 
-videoBtn.addEventListener('click', function(){
-    if(!videoBtn.classList.contains('slide')) {
-        videoBtn.classList.add('slide')
-        video.pause()
-    } else {
-        videoBtn.classList.remove('slide')
-        video.play()
-    }
+videoOn.addEventListener('click', () => {
+    video.play()
+    videoOn.classList.add('video-btn-inactive')
+    videoOff.classList.remove('video-btn-inactive')
+})
+
+videoOff.addEventListener('click', () => {
+    video.pause()
+    videoOff.classList.add('video-btn-inactive')
+    videoOn.classList.remove('video-btn-inactive')
 })
 
 //preloader
@@ -23,14 +26,15 @@ window.addEventListener('load', function(){
 
 // team-modal
 const teamOpen = document.getElementById('team-open')
-const teamClose = document.getElementById('team-close')
+const teamClose = document.querySelector('.team-close')
 const teamModal = document.querySelector('.team-modal')
 
 teamOpen.addEventListener('click', () => {
     console.log('team')
     teamModal.classList.add('open-modal')
-})
+});
 teamClose.addEventListener('click', () => {
+    console.log('klik');
     teamModal.classList.remove('open-modal')
 })
 
@@ -47,15 +51,15 @@ contactClose.addEventListener('click', () => {
     contactModal.classList.remove('open-modal')
 })
 
-//services-modal 
-// const servicesOpen = document.getElementById('services-open')
-// const servicesClose = document.getElementById('services-close')
-// const servicesModal = document.querySelector('.services-modal')
+// services-modal 
+const servicesOpen = document.getElementById('services-open')
+const servicesClose = document.getElementById('services-close')
+const servicesModal = document.querySelector('.services-modal')
 
-// servicesOpen.addEventListener('click', () => {
-//     console.log('services')
-//     servicesModal.classList.add('open-modal')
-// })
-// servicesClose.addEventListener('click', () => {
-//     servicesModal.classList.remove('open-modal')
-// })
+servicesOpen.addEventListener('click', () => {
+    console.log('services')
+    servicesModal.classList.add('open-modal')
+})
+servicesClose.addEventListener('click', () => {
+    servicesModal.classList.remove('open-modal')
+})

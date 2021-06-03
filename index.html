@@ -15,13 +15,14 @@
     <div class="preloader">
         <img src="Ball-CrossLoading-Image-1.gif" alt="preloader">
     </div>
+    <header class="home">
         <video class="video-container" playsinline muted autoplay loop>
             <source src="culture-palace.mp4" type="video/mp4">
         </video>
         <div class="flex-container homepage-content">
             <nav>
                 <ul class="nav-menu">
-                    <!-- <li id="services-open">Usługi</li> -->
+                    <li id="services-open">Usługi</li>
                     <li id="team-open">Zespół</li>
                     <li id="contact-open">Kontakt</li>
                 </ul>
@@ -30,20 +31,71 @@
                 <img src="img/Mondestate-logo-white-orange-RGB-on-transparent-bckgrnd-01.png" alt="logo">
             </div>
             <button class="btn video-btn">
-                <span class="video-span">on</span>
-                <span class="video-span video-pause">off</span>
-                <span class="video-span video-switch"></span>
+                <span class="video-on video-btn-inactive">on</span>
+                <span>/</span>
+                <span class="video-off">off</span>
             </button>
         </div>
     </header>
-    <header class="home">
-    <div class="team-modal modal">
+    <div class="services-modal modal">
+        <div class="section--bcg">
+            <header class="section--header">
+                <span></span>
+                <button class="section--close-btn" id="services-close">
+                    <i class="fas fa-times"></i>
+                </button>
+            </header>
+            <section class="services">
+                <div class="services__intro">
+                    <div class="services--logo">
+                        <img src="./img/mondestate-logo-white-small.png" alt="logo">
+                    </div>
+                    <h2 class="services-logo-subtitle">
+                        targeting your spot
+                    </h2>
+                </div>
+                <div class="services__cards">
+                    <div class="services--card card1">
+                        <div class="services--card__img">
+                            <img src="./img/mondestate-target-white.png" alt="two orange arrow-like shapes">
+                        </div>
+                        <div class="services--card__text">
+                            <p>
+                                Oferujemy usługi w zakresie sprzedaży, zakupu, jak i wynajmu nieruchomości mieszkaniowych
+                            </p>
+                        </div>
+                    </div>
+                    <div class="services--card card2">
+                        <div class="services--card__img">
+                            <img src="./img/mondestate-target-white.png" alt="two orange arrow-like shapes">
+                        </div>
+                        <div class="services--card__text">
+                            <p>
+                                Towarzyszymy Klientowi podczas całego procesu i jednocześnie skupiamy się na jak najszybszej realizacji wytyczonego przez niego celu 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="services--card card3">
+                        <div class="services--card__img">
+                            <img src="./img/mondestate-target-white.png" alt="two orange arrow-like shapes">
+                        </div>
+                        <div class="services--card__text">
+                            <p>
+                                Koncentrujemy się na osiągnięciu jak najwyższej satysfakcji naszego Klienta w zakresie świadczonych przez nas usług
+                            </p>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        </div>
+    </div>
+    <div class="team-modal modal"> 
         <div class="section--bcg">
             <header class="section--header">
                 <div class="section--logo">
                     <img src="./img/Mondestate-logo-white-orange-RGB-on-transparent-bckgrnd-01.png" alt="logo">
                 </div>
-                <button class="section--close-btn" id="team-close">
+                <button class="section--close-btn team-close">
                     <i class="fas fa-times"></i>
                 </button>
             </header>
@@ -120,16 +172,8 @@
                 <button type="submit" class="btn contact-form-btn">Wyślij</button>
             </form>
         </div>
-        </div>
-        <!-- <div class="services-modal modal">
-            <button class="close-btn" id="services-close">
-                <i class="fas fa-times"></i>
-            </button>
-            <div class="flex-container services-content">
-                <h1>our services</h1>
-            </div>
-        </div> -->
-        <script src="js/main.js"></script>
+    </div>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

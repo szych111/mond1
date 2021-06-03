@@ -8,14 +8,13 @@
     transition: var(--transition);
     visibility: hidden;
     z-index: -10;
-    display: flex;
     overflow-y: auto;
 }
 
 .open-modal {
     visibility: visible;
     z-index: 10;
-  }
+}
 
 .close-btn {
     position: absolute;

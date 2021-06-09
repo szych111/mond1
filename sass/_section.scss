@@ -3,6 +3,9 @@
     background-image: url(../img/map-bcg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 section {
@@ -36,12 +39,6 @@ section {
     transform: scale(1.3);
 }
 
-.team__intro {
-    display: flex;
-    flex-direction: column;
-    padding: 2vh;
-}
-
 .section__title {
     font-size: 3rem;
     
@@ -51,10 +48,6 @@ section {
     .section--close-btn {
       font-size: 2rem;
       color: $base-coral;
-    }
-
-    .team__intro {
-        flex-direction: row;
     }
 
     .section__title {

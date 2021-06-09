@@ -25,18 +25,18 @@ window.addEventListener('load', function(){
 })
 
 // team-modal
-const teamOpen = document.getElementById('team-open')
-const teamClose = document.querySelector('.team-close')
-const teamModal = document.querySelector('.team-modal')
+// const teamOpen = document.getElementById('team-open')
+// const teamClose = document.querySelector('.team-close')
+// const teamModal = document.querySelector('.team-modal')
 
-teamOpen.addEventListener('click', () => {
-    console.log('team')
-    teamModal.classList.add('open-modal')
-});
-teamClose.addEventListener('click', () => {
-    console.log('klik');
-    teamModal.classList.remove('open-modal')
-})
+// teamOpen.addEventListener('click', () => {
+//     console.log('team')
+//     teamModal.classList.add('open-modal')
+// });
+// teamClose.addEventListener('click', () => {
+//     console.log('klik');
+//     teamModal.classList.remove('open-modal')
+// })
 
 //contact-modal 
 const openContact = document.getElementById('contact-open')

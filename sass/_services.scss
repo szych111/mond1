@@ -1,5 +1,5 @@
 .services {
-    background-color: rgb(60,60,65);
+    background-color: #3b3b3b;
     background-image: url(../img/services-window-view-img.jpg);
     background-position: center;
     background-size: cover;
@@ -16,11 +16,15 @@
     max-width: 250px;
 }
 
+.close-btn-services {
+    width: 20px;
+}
+
 .services__main {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: rgba(60,60,65,0.5);
+    background-color: rgba(#1d2226, 0.5);
     padding: 0 5vw;
     max-width: 600px;
 
@@ -36,14 +40,17 @@
 }
 
 @media (min-width: 900px) {
+    .close-btn-services {
+        width: 30px;
+    }
+
     .services {
-        background-color: rgb(60,60,65);
-        background-image: url(../img/services-window-view-img.jpg);
-        background-position-x: center;
+        //background-color: #1d2226;
+        background-color: #3b3b3b;
+        background-image: url(../img/services-window-view-dimmer.jpg);
+        background-position-x: 40%;
         background-size: 35%;
-        background-repeat: no-repeat;
-        height: 100vh;
-        padding: 0 2vw 5vh;
+        padding: 2vh 2.5vw 5vh;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -60,7 +67,7 @@
     
         h1 {
             font-size: 4rem;
-            margin-bottom: 0;
+            margin-bottom: 4vh;
             max-width: 10vw;
         }
 
@@ -69,16 +76,22 @@
         }
 
         .services__text {
-            max-width: 30vw;
-            padding: 0 1.5vw 25vh;
+            max-width: 35vw;
+            padding-bottom: 30vh;
+            line-height: 1.5;
+            flex-basis: 60%;
         }
     
     }
 }
 
 @media (min-width: 1200px) {
+    .close-btn-services {
+        width: 40px;
+    }
+
     .services__main {
-    
+
         h1 {
             font-size: 5rem;
         }

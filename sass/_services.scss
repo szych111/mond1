@@ -5,15 +5,10 @@
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
-    padding: 0 2vw 5vh;
+    padding-bottom: 5vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-}
-
-.logo {
-    margin-top: 1vh;
-    max-width: 250px;
 }
 
 .services__main {
@@ -36,13 +31,7 @@
 }
 
 @media (min-width: 900px) {
-    .close-btn-services {
-        width: 30px;
-    }
-
     .services {
-        //background-color: #1d2226;
-        background-color: #3b3b3b;
         background-image: url(../img/services-window-view-dimmer.jpg);
         background-position-x: 40%;
         background-size: 35%;
@@ -81,10 +70,6 @@
 }
 
 @media (min-width: 1200px) {
-    .close-btn-services {
-        width: 40px;
-    }
-
     .services__main {
 
         h1 {
@@ -97,8 +82,4 @@
     
     }
 
-    .logo {
-        margin-top: 2vh;
-        max-width: 300px;
-    }
 }

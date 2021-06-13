@@ -1,3 +1,10 @@
+.contact-greeting {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2rem;
+    margin: 10vmin auto 3vmax;
+}
+
 .contact-content {
     display: flex;
     flex-wrap: wrap;
@@ -5,7 +12,8 @@
     justify-content: center;
     width: 95vw;
     max-width: 1600px;
-    margin: 10vh auto;
+    margin: 0 auto;
+
 }
 
 .contact-content > * {
@@ -22,10 +30,7 @@
     font-size: 0.8rem;
     line-height: 1.5;
     text-align: center;
-}
-
-address {
-    font-style: normal;
+    margin-bottom: 2vh;
 }
 
 .contact-logo {
@@ -43,6 +48,7 @@ address {
 
 address {
     margin-bottom: 0.8rem;
+    font-style: normal;
 }
 
 .contact-form {
@@ -58,24 +64,31 @@ address {
 }
 
 .contact-form-btn {
-    background-color: $base-coral;
+    background-color: transparent;
     border-radius: 3px;
-    width: 8em;
-    margin: 0 auto;
+    width: auto;
+    margin: 0.8em auto;
+    padding: 0.5em 1em;
     color: white;
+    transition: 500ms;
+}
+
+.contact-form-btn:hover {
+    color: rgba($base-coral, 1);
+    transform: scale(1.1);
 }
 
 ::placeholder {
     font-family: inherit;
     font-size: 0.8rem;
-    color: rgba($color: $base-grey, $alpha: .8);
+    color: rgba($base-grey,0.7);
     opacity: 0.8;
 }
 
-@media (min-width: 1000px) {
-
-    .contact-content {
-        margin: 10vh auto;
+@media (min-width: 900px) {
+    .contact-greeting {
+        font-size: 3rem;
+        margin-top: 10vmax;
     }
 
     .contact-data {
@@ -83,7 +96,8 @@ address {
     }
 
     .contact-form {
-        max-width: 600px;
+        max-width: 550px;
+        margin-bottom: 0;
     }
 
     .contact-form > * {
@@ -96,5 +110,11 @@ address {
 
     ::placeholder {
         font-size: 1rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .contact-greeting {
+        font-size: 4rem;
     }
 }

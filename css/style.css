@@ -8,6 +8,13 @@ rgba(185, 115, 50, 0.5),
 rgba(94, 83, 23, 0.5));
 }
 
+.contact-greeting {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2rem;
+  margin: 10vmin auto 3vmax;
+}
+
 .contact-content {
   display: flex;
   flex-wrap: wrap;
@@ -15,7 +22,7 @@ rgba(94, 83, 23, 0.5));
   justify-content: center;
   width: 95vw;
   max-width: 1600px;
-  margin: 10vh auto;
+  margin: 0 auto;
 }
 
 .contact-content > * {
@@ -32,10 +39,7 @@ rgba(94, 83, 23, 0.5));
   font-size: 0.8rem;
   line-height: 1.5;
   text-align: center;
-}
-
-address {
-  font-style: normal;
+  margin-bottom: 2vh;
 }
 
 .contact-logo {
@@ -53,6 +57,7 @@ address {
 
 address {
   margin-bottom: 0.8rem;
+  font-style: normal;
 }
 
 .contact-form {
@@ -68,29 +73,38 @@ address {
 }
 
 .contact-form-btn {
-  background-color: #f57d58;
+  background-color: transparent;
   border-radius: 3px;
-  width: 8em;
-  margin: 0 auto;
+  width: auto;
+  margin: 0.8em auto;
+  padding: 0.5em 1em;
   color: white;
+  transition: 500ms;
+}
+
+.contact-form-btn:hover {
+  color: #f57d58;
+  transform: scale(1.1);
 }
 
 ::placeholder {
   font-family: inherit;
   font-size: 0.8rem;
-  color: rgba(59, 59, 59, 0.8);
+  color: rgba(59, 59, 59, 0.7);
   opacity: 0.8;
 }
 
-@media (min-width: 1000px) {
-  .contact-content {
-    margin: 10vh auto;
+@media (min-width: 900px) {
+  .contact-greeting {
+    font-size: 3rem;
+    margin-top: 10vmax;
   }
   .contact-data {
     font-size: 1.2rem;
   }
   .contact-form {
-    max-width: 600px;
+    max-width: 550px;
+    margin-bottom: 0;
   }
   .contact-form > * {
     font-size: 1.2rem;
@@ -100,6 +114,12 @@ address {
   }
   ::placeholder {
     font-size: 1rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .contact-greeting {
+    font-size: 4rem;
   }
 }
 
@@ -128,11 +148,11 @@ nav > ul {
 }
 
 li {
-  transition: var(--transition);
+  transition: 1000ms;
 }
 
 li:hover, li:focus {
-  transform: scale(1.2);
+  transform: scale(1.1);
   font-weight: 600;
   color: #f57d58;
 }
@@ -153,31 +173,10 @@ li:hover, li:focus {
   z-index: 10;
 }
 
-.close-btn {
-  position: absolute;
-  top: 1vh;
-  right: 1vh;
-  font-size: 1.2rem;
-  background: transparent;
-  border-color: transparent;
-  color: #f57d58;
-  cursor: pointer;
-  transition: var(--transition);
-}
-
-.close-btn:hover {
-  color: white;
-  transform: scale(1.3);
-}
-
 @media (min-width: 800px) {
   .modal {
     align-items: center;
     height: 100vh;
-  }
-  .close-btn {
-    font-size: 3rem;
-    color: #f57d58;
   }
 }
 
@@ -217,15 +216,10 @@ li:hover, li:focus {
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
-  padding: 0 2vw 5vh;
+  padding-bottom: 5vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}
-
-.logo {
-  margin-top: 1vh;
-  max-width: 250px;
 }
 
 .services__main {
@@ -248,11 +242,7 @@ li:hover, li:focus {
 }
 
 @media (min-width: 900px) {
-  .close-btn-services {
-    width: 30px;
-  }
   .services {
-    background-color: #3b3b3b;
     background-image: url(../img/services-window-view-dimmer.jpg);
     background-position-x: 40%;
     background-size: 35%;
@@ -286,47 +276,44 @@ li:hover, li:focus {
 }
 
 @media (min-width: 1200px) {
-  .close-btn-services {
-    width: 40px;
-  }
   .services__main h1 {
     font-size: 5rem;
   }
   .services__main p {
     font-size: 1.2em;
   }
-  .logo {
-    margin-top: 2vh;
-    max-width: 300px;
-  }
 }
 
 section {
-  padding: 0 2vh;
+  padding: 2vmin;
+  background-color: #3b3b3b;
 }
 
 .section--header {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
-  padding: 1vh;
+  align-items: center;
 }
 
-.section--logo {
-  max-width: 450px;
-  width: 45%;
-  margin: 0;
+.logo {
+  max-width: 230px;
 }
 
-.section-close-span {
-  font-size: 7rem;
+.close-btn {
+  background-color: transparent;
+  border: none;
+  color: rgba(245, 125, 88, 0.7);
   cursor: pointer;
-  transition: var(--transition);
+  transition: 1000ms;
 }
 
-.section-close-span:hover {
-  color: white;
-  transform: scale(1.3);
+.close-btn span {
+  font-size: 3rem;
+  line-height: 0.5;
+}
+
+.close-btn:hover {
+  color: #f57d58;
 }
 
 .section__title {
@@ -334,9 +321,11 @@ section {
 }
 
 @media (min-width: 800px) {
-  .section--close-btn {
-    font-size: 2rem;
-    color: #f57d58;
+  .logo {
+    max-width: 400px;
+  }
+  .close-btn span {
+    font-size: 6rem;
   }
   .section__title {
     font-size: 5rem;
@@ -498,6 +487,10 @@ body, a {
 
 a {
   text-decoration: none;
+}
+
+button {
+  display: block;
 }
 
 .home {

@@ -1,57 +1,44 @@
-.section--bcg {
-    min-height: 95vh;
-    background-image: url(../img/map-bcg.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
 section {
-    padding: 0 5vh;
+  padding: 0 2vh;
 }
 
 .section--header {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding: 1vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 1vh;
 }
 
 .section--logo {
-    max-width: 450px;
-    width: 45%;
-    margin: 0;
+  max-width: 450px;
+  width: 45%;
+  margin: 0;
 }
 
-.section--close-btn {
-    font-size: 1.2rem;
-    background: transparent;
-    border-color: transparent;
-    color: $base-coral;
-    cursor: pointer;
-    transition: var(--transition);
+.section-close-span {
+  font-size: 7rem;
+  cursor: pointer;
+  transition: var(--transition);
 }
 
-.section--close-btn:hover {
-    color: white;
-    transform: scale(1.3);
+.section-close-span:hover {
+  color: white;
+  transform: scale(1.3);
 }
 
 .section__title {
-    font-size: 3rem;
-    
+  font-size: 3rem;
+  
 }
 
 @media (min-width: 800px) {
-    .section--close-btn {
-      font-size: 2rem;
-      color: $base-coral;
-    }
-
-    .section__title {
-        font-size: 5rem;
-        max-width: 450px;
-    }
+  .section--close-btn {
+    font-size: 2rem;
+    color: $base-coral;
   }
+
+  .section__title {
+      font-size: 5rem;
+      max-width: 450px;
+  }
+}

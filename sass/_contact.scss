@@ -24,12 +24,15 @@
     text-align: center;
 }
 
+address {
+    font-style: normal;
+}
+
 .contact-logo {
     max-width: 85%;
 }
 
 .contact-staff {
-    background-color: rgba($base-coral, 0.5);
     padding: 0.8em 1.2em;
     margin-bottom: 0.8em;
 }
@@ -65,7 +68,7 @@ address {
 ::placeholder {
     font-family: inherit;
     font-size: 0.8rem;
-    color: $base-coral;
+    color: rgba($color: $base-grey, $alpha: .8);
     opacity: 0.8;
 }
 

@@ -13,7 +13,7 @@
     font-weight: 700;
     background-color: rgba(rgb(59, 56, 56), 0);
     padding: 0.5em 1em;
-    transition: 1000ms;
+    transition: var(--transition);
 
     span {
         margin: 0 0.2em;

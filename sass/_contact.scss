@@ -70,7 +70,7 @@ address {
     margin: 0.8em auto;
     padding: 0.5em 1em;
     color: white;
-    transition: 500ms;
+    transition: var(--transition);
 }
 
 .contact-form-btn:hover {

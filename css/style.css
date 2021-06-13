@@ -79,7 +79,7 @@ address {
   margin: 0.8em auto;
   padding: 0.5em 1em;
   color: white;
-  transition: 500ms;
+  transition: var(--transition);
 }
 
 .contact-form-btn:hover {
@@ -148,7 +148,7 @@ nav > ul {
 }
 
 li {
-  transition: 1000ms;
+  transition: var(--transition);
 }
 
 li:hover, li:focus {
@@ -195,7 +195,7 @@ li:hover, li:focus {
   font-weight: 700;
   background-color: rgba(59, 56, 56, 0);
   padding: 0.5em 1em;
-  transition: 1000ms;
+  transition: var(--transition);
 }
 
 .video-btn span {
@@ -304,7 +304,7 @@ section {
   border: none;
   color: rgba(245, 125, 88, 0.7);
   cursor: pointer;
-  transition: 1000ms;
+  transition: var(--transition);
 }
 
 .close-btn span {
@@ -314,6 +314,7 @@ section {
 
 .close-btn:hover {
   color: #f57d58;
+  transform: scale(1.1);
 }
 
 .section__title {
@@ -446,7 +447,7 @@ section {
 }
 
 :root {
-  --transition: all 0.3s linear;
+  --transition: all 300ms linear;
 }
 
 *,

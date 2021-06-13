@@ -24,7 +24,7 @@ nav > ul {
 }
 
 li {
-    transition: 1000ms;
+    transition: var(--transition);
 }
 
 li:hover, li:focus {

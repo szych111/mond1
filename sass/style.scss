@@ -6,6 +6,7 @@
 @import 'services';
 @import 'section';
 @import 'team';
+@import 'portfolio';
 
 @font-face {
   font-family: Hellix;
@@ -14,6 +15,9 @@
 
 :root {
     --transition: all 300ms linear;
+    --portfolio-pic-s: 140px;
+    --portfolio-pic-m: 220px;
+    --portfolio-pic-l: 300px;
 }
 
 *,

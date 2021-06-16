@@ -18,7 +18,7 @@ rgba(94, 83, 23, 0.5));
 .contact-content {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   width: 95vw;
   max-width: 1600px;
@@ -47,12 +47,12 @@ rgba(94, 83, 23, 0.5));
 }
 
 .contact-staff {
-  padding: 0.8em 1.2em;
-  margin-bottom: 0.8em;
+  padding: 0 1.2em 1em;
+  margin-bottom: 1em;
 }
 
-.contact-staff p:nth-child(2) {
-  margin-bottom: 0.5em;
+.contact-staff p:nth-child(3) {
+  margin-bottom: 2em;
 }
 
 address {
@@ -62,6 +62,7 @@ address {
 
 .contact-form {
   max-width: 400px;
+  padding: 0.3em 0 0;
   margin-bottom: 5vh;
 }
 
@@ -287,6 +288,7 @@ li:hover, li:focus {
 section {
   padding: 2vmin;
   background-color: #3b3b3b;
+  height: 100vh;
 }
 
 .section--header {
@@ -441,6 +443,97 @@ section {
   }
 }
 
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.portfolio__content {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: auto;
+  margin-top: auto;
+}
+
+.portfolio__content h1 {
+  font-size: 3.5rem;
+  margin-bottom: 10vh;
+}
+
+.portfolio__pics {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-shrink: 1;
+  padding: 2vmin;
+  text-align: center;
+}
+
+.portfolio__pic {
+  width: var(--portfolio-pic-s);
+  height: var(--portfolio-pic-s);
+  position: relative;
+  margin: 1vmin;
+  opacity: 0.9;
+  transition: opacity ease-out 250ms;
+}
+
+.portfolio__pic img {
+  width: 100%;
+}
+
+.portfolio__pic p {
+  position: absolute;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  opacity: 0;
+}
+
+.portfolio__pic:hover img {
+  opacity: 0.5;
+}
+
+.portfolio__pic:hover p {
+  opacity: 1;
+}
+
+.portfolio__pic p:hover {
+  opacity: 1;
+}
+
+@media (min-width: 900px) {
+  .portfolio__content {
+    flex-direction: row;
+    align-items: flex-end;
+  }
+  .portfolio__pics {
+    flex-direction: row;
+    flex-basis: 70%;
+  }
+  .portfolio__pic {
+    width: var(--portfolio-pic-m);
+    height: var(--portfolio-pic-m);
+  }
+  .portfolio__pic p {
+    font-size: 1.4rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .portfolio__pic {
+    width: var(--portfolio-pic-l);
+    height: var(--portfolio-pic-l);
+  }
+  .portfolio__pic p {
+    font-size: 1.6rem;
+  }
+}
+
 @font-face {
   font-family: Hellix;
   src: url(../fonts);
@@ -448,6 +541,9 @@ section {
 
 :root {
   --transition: all 300ms linear;
+  --portfolio-pic-s: 140px;
+  --portfolio-pic-m: 220px;
+  --portfolio-pic-l: 300px;
 }
 
 *,

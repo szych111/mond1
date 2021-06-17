@@ -94,11 +94,11 @@
                         e-mail: biuro@mondestate.pl 
                     </address>
                 </div>
-                <form class="contact-form" action="./contact-form.php" method="GET">
+                <form class="contact-form" action="./greet.php" method="POST">
                     <!-- <form class="contact-form" action="https://formspree.io/f/xqkwpkny" method="POST"> -->
                         <input type="text" name='first_name' placeholder="Imię">
                         <input type="text" name='last_name' placeholder="Nazwisko">
-                        <input type="email" name="_replyto" placeholder="E-mail">
+                        <input type="email" name="visitor_email" placeholder="E-mail">
                         <textarea name="message" cols="20" rows="8" placeholder="Wiadomość"></textarea>
                         <button type="submit" class="btn contact-form-btn">Wyślij</button>
                 </form>

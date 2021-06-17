@@ -320,7 +320,8 @@ section {
 }
 
 .section__title {
-  font-size: 3rem;
+  font-size: 3.5rem;
+  margin-bottom: 4vh;
 }
 
 @media (min-width: 800px) {
@@ -331,8 +332,16 @@ section {
     font-size: 6rem;
   }
   .section__title {
-    font-size: 5rem;
-    max-width: 450px;
+    font-size: 4rem;
+    margin-bottom: 4vh;
+    max-width: 10vw;
+  }
+}
+
+@media (min-width: 1200px) {
+  .section__title {
+    font-size: 80px;
+    max-width: 30%;
   }
 }
 
@@ -456,11 +465,6 @@ section {
   margin-top: auto;
 }
 
-.portfolio__content h1 {
-  font-size: 3.5rem;
-  margin-bottom: 10vh;
-}
-
 .portfolio__pics {
   display: flex;
   justify-content: center;
@@ -510,6 +514,8 @@ section {
   .portfolio__content {
     flex-direction: row;
     align-items: flex-end;
+    justify-content: space-between;
+    padding-left: 2vw;
   }
   .portfolio__pics {
     flex-direction: row;

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Document</title>
 </head>
 <body>
@@ -24,7 +25,7 @@
 
     ?>
 
-    <p>Thanks for your message <?=$_POST['first_name'] . " " . $_POST['last_name']?>.</p>
+    <p>Dziękujemy za wiadomość, wkrótce skontaktujemy się z Tobą  <?=$_POST['first_name'] ?>.</p>
     <a href="index.php">Reset</a>
 </body>
 </html>

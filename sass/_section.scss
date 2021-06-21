@@ -1,7 +1,7 @@
 section {
   padding: 2vmin;
   background-color: $base-grey;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .section--header {
@@ -56,6 +56,6 @@ section {
 @media (min-width: 1200px) {
   .section__title {
     font-size: 80px;
-    max-width: 30%;
+    max-width: 25vw;
   }
 }

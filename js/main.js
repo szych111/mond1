@@ -63,3 +63,16 @@ servicesOpen.addEventListener('click', () => {
 servicesClose.addEventListener('click', () => {
     servicesModal.classList.remove('open-modal')
 })
+
+// portfolio-modal 
+const portfolioOpen = document.getElementById('portfolio-open')
+const portfolioClose = document.getElementById('portfolio-close')
+const portfolioModal = document.querySelector('.portfolio-modal')
+
+portfolioOpen.addEventListener('click', () => {
+    console.log('services')
+    portfolioModal.classList.add('open-modal')
+})
+portfolioClose.addEventListener('click', () => {
+    portfolioModal.classList.remove('open-modal')
+})

@@ -11,8 +11,8 @@ rgba(94, 83, 23, 0.5));
 .contact-greeting {
   text-align: center;
   text-transform: uppercase;
-  font-size: 2rem;
-  margin: 10vmin auto 3vmax;
+  font-size: 1.5rem;
+  margin: 10vmax auto 3vmax;
 }
 
 .contact-content {
@@ -156,6 +156,26 @@ li:hover, li:focus {
   transform: scale(1.1);
   font-weight: 600;
   color: #f57d58;
+}
+
+.burger-container {
+  width: 50px;
+}
+
+.burger-stripe {
+  border-top: 2px solid #f57d58;
+  padding-bottom: 6px;
+}
+
+.nav-button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  position: absolute;
+  top: 5vh;
+  right: 5vh;
+  display: none;
 }
 
 .modal {
@@ -307,6 +327,7 @@ section {
   color: rgba(245, 125, 88, 0.7);
   cursor: pointer;
   transition: var(--transition);
+  margin-right: 2vw;
 }
 
 .close-btn span {
@@ -464,7 +485,7 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 0 5vw;
+  padding: 10vmax 4vw;
 }
 
 .portfolio__main h1 {
@@ -481,7 +502,7 @@ section {
 }
 
 :root {
-  --portfolio-pic: 38vw;
+  --portfolio-pic: 39vw;
 }
 
 .portfolio__pic {
@@ -521,7 +542,7 @@ section {
 
 @media (min-width: 600px) {
   :root {
-    --portfolio-pic: 18vw;
+    --portfolio-pic: 15vw;
   }
   .portfolio__main {
     flex-direction: row;
@@ -530,30 +551,16 @@ section {
     padding: 1vmax;
   }
   .portfolio__main h1 {
-    flex-basis: 25vw;
+    flex-basis: 20vw;
     margin-bottom: 0;
     font-size: calc(var(--portfolio-pic)*0.4);
   }
   .portfolio__pics {
-    flex-basis: 65vw;
+    flex-basis: 75vw;
   }
 }
 
 @media (min-width: 900px) {
-  :root {
-    --portfolio-pic: 18vw;
-  }
-  .portfolio__main {
-    flex-direction: row;
-    align-items: flex-end;
-    justify-content: space-between;
-    padding: 1vmax;
-  }
-  .portfolio__main h1 {
-    flex-basis: 25vw;
-    margin-bottom: 0;
-    font-size: calc(var(--portfolio-pic)*0.4);
-  }
   .portfolio__pics {
     flex-basis: 65vw;
   }
@@ -603,7 +610,8 @@ select {
 }
 
 .homepage-logo {
-  max-width: 80%;
+  width: 80%;
+  max-width: 900px;
 }
 
 body, a {
@@ -675,7 +683,7 @@ h1 {
   display: flex;
   align-items: center;
   width: 95vw;
-  max-width: 1600px;
+  max-width: 1800px;
   margin: 0 auto;
 }
 

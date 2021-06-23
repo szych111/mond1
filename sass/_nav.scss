@@ -16,7 +16,6 @@ nav > ul {
     nav > ul {
         font-size: 1.8rem;
     } 
-
 }
 
 .nav-menu > * + * {
@@ -31,5 +30,25 @@ li:hover, li:focus {
     transform: scale(1.1);
     font-weight: 600;
     color: $base-coral;
+}
+
+.burger-container {
+    width: 50px;
+}
+
+.burger-stripe {
+    border-top: 2px solid $base-coral;
+    padding-bottom: 6px;
+}
+
+.nav-button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    position: absolute;
+    top: 5vh;
+    right: 5vh;
+    display: none;
 }
 

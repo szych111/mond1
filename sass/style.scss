@@ -45,7 +45,8 @@ select {
 }
 
 .homepage-logo {
-    max-width: 80%;
+    width: 80%;
+    max-width: 900px;
 }
 
 body, a {
@@ -119,8 +120,9 @@ h1 {
     display: flex;
     align-items: center;
     width: 95vw;
-    max-width: 1600px;
+    max-width: 1800px;
     margin: 0 auto;
+    //background-color: pink;
 }
 
 .homepage-content {

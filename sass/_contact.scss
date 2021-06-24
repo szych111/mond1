@@ -65,13 +65,11 @@ address {
 }
 
 .contact-form-btn {
-    background-color: transparent;
-    border-radius: 3px;
     width: auto;
     margin: 0.8em auto;
     padding: 0.5em 1em;
     color: white;
-    transition: var(--transition);
+    text-transform: uppercase;
 }
 
 .contact-form-btn:hover {

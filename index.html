@@ -13,58 +13,52 @@
 </head>
 
 <body>
+    <nav>
+        <ul>
+            <li id="services-open">Usługi</li>
+            <li id="portfolio-open">Portfolio</li>
+            <li id="contact-open">Kontakt</li>
+        </ul>
+    </nav>
     <div class="preloader">
         <img src="img/Ball-CrossLoading-Image-1.gif" alt="preloader">
     </div>
     <header class="home">
-        <!-- <video class="video-container" playsinline muted autoplay loop>
+        <video class="video-container" playsinline muted autoplay loop>
             <source src="img/culture-palace.mp4" type="video/mp4">
-        </video> -->
-        <div class="flex-container homepage-content">
-            <nav>
-                <ul class="nav-menu">
-                    <li id="services-open">Usługi</li>
-                    <li id="portfolio-open">Portfolio</li>
-                    <li id="contact-open">Kontakt</li>
-                </ul>
-                <!-- <button class="nav-button">
-                    <div class="burger-container">
-                        <div class="burger-stripe"></div>
-                        <div class="burger-stripe"></div>
-                        <div class="burger-stripe"></div>
-                    </div>
-                </button> -->
-                <button class="nav-button">
-                    <svg viewBox="0 0 40 17" height="17" width="40">
-                        <style type="text/css">
-                            .st0 {
-                                display: none;
-                            }
+        </video>
+        
+        <button class="btn nav-button" id="nav-burger">
+            <span class="close-nav close-btn">&times</span>
+            <svg class="open-nav" viewBox="0 0 40 17" height="17" width="40">
+                <style type="text/css">
+                    .st0 {
+                        display: none;
+                    }
 
-                            .st2 {
-                                fill: #F57D58;
-                            }
-                        </style>
-                        <g id="Layer_3" class="st0">
-                            <rect class="st1" width="40" height="17" />
-                        </g>
-                        <g id="Layer_2">
-                            <rect y="2" class="st2" width="40" height="2" />
-                            <rect y="8" class="st2" width="40" height="2" />
-                            <rect y="14" class="st2" width="40" height="2" />
-                        </g>
-                    </svg>
-                </button>
-            </nav>
-            <div class="homepage-logo">
-                <img src="img/Mondestate-logo-white-orange-RGB-on-transparent-bckgrnd-01.png" alt="logo">
-            </div>
-            <button class="btn video-btn">
-                <span class="video-on video-btn-inactive">on</span>
-                <span>/</span>
-                <span class="video-off">off</span>
-            </button>
+                    .st2 {
+                        fill: #F57D58;
+                    }
+                </style>
+                <g id="Layer_3" class="st0">
+                    <rect class="st1" width="40" height="30" />
+                </g>
+                <g id="Layer_2">
+                    <rect y="2" class="st2" width="40" height="2" />
+                    <rect y="8" class="st2" width="40" height="2" />
+                    <rect y="14" class="st2" width="40" height="2" />
+                </g>
+            </svg>
+            
+        </button>
+        <div class="homepage-logo">
+            <img src="img/Mondestate-logo-white-orange-RGB-on-transparent-bckgrnd-01.png" alt="logo">
         </div>
+        <button class="btn video-btn">
+            <span class="video-on video-btn-inactive">on</span>
+            <span>/</span>
+            <span class="video-off">off</span>
+        </button>
     </header>
     <div class="services-modal modal">
         <section class="services">
@@ -184,7 +178,7 @@
                     </address>
                 </div>
                 <form class="contact-form" action="./greet.php" method="POST">
-                    <!-- <form class="contact-form" action="https://formspree.io/f/xqkwpkny" method="POST"> -->
+                    <form class="contact-form" action="https://formspree.io/f/xqkwpkny" method="POST">
                     <input type="text" name='first_name' placeholder="Imię">
                     <input type="text" name='last_name' placeholder="Nazwisko">
                     <input type="email" name="visitor_email" placeholder="E-mail">

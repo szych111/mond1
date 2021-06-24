@@ -2,7 +2,7 @@
 @import 'contact';
 @import 'nav';
 @import 'modal';
-@import 'switch-btn';
+@import 'video';
 @import 'services';
 @import 'section';
 @import 'team';
@@ -14,7 +14,7 @@
 }
 
 :root {
-    --transition: all 300ms linear;
+    --transition: all 500ms ease-out;
 }
 
 *,
@@ -44,11 +44,6 @@ select {
   font: inherit;
 }
 
-.homepage-logo {
-    width: 80%;
-    max-width: 900px;
-}
-
 body, a {
     font-family: 'Hellix Thin', sans-serif;
     color: white;
@@ -62,21 +57,6 @@ button {
     display: block;
 }
 
-.home {
-    min-height: 100vh;
-    //position: relative;
-}
-
-.video-container {
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -2;
-}
-
 h1 {
     color: white;
     font-size: 10vw;
@@ -84,7 +64,21 @@ h1 {
     font-weight: 200;
 }
 
-.home::after {
+.btn {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    border-radius: 5px;
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+///--- home ---///
+
+.home {
+    min-height: 100vh;
+
+    &::after {
     content: "";
     position: absolute;
     top: 0;
@@ -92,8 +86,17 @@ h1 {
     width: 100%;
     height: 100%;
     background: rgba($base-grey, 0.5);
-    //background-image: var(--gradient);
     z-index: -1;
+}
+}
+
+.homepage-logo {
+    width: 80%;
+    max-width: 900px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .preloader {
@@ -115,19 +118,3 @@ h1 {
     z-index: -999;
     visibility: hidden;
 }
-
-.flex-container {
-    display: flex;
-    align-items: center;
-    width: 95vw;
-    max-width: 1800px;
-    margin: 0 auto;
-    //background-color: pink;
-}
-
-.homepage-content {
-    flex-direction: column;
-    justify-content: space-between;
-    min-height: 90vh;
-}
-

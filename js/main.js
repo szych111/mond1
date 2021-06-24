@@ -76,3 +76,11 @@ portfolioOpen.addEventListener('click', () => {
 portfolioClose.addEventListener('click', () => {
     portfolioModal.classList.remove('open-modal')
 })
+
+///--- nav menu toggle ---///
+
+const navBurger = document.getElementById('nav-burger')
+
+navBurger.addEventListener('click', () => {
+    document.body.classList.toggle('nav-open')
+})

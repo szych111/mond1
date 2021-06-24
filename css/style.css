@@ -74,13 +74,11 @@ address {
 }
 
 .contact-form-btn {
-  background-color: transparent;
-  border-radius: 3px;
   width: auto;
   margin: 0.8em auto;
   padding: 0.5em 1em;
   color: white;
-  transition: var(--transition);
+  text-transform: uppercase;
 }
 
 .contact-form-btn:hover {
@@ -125,31 +123,43 @@ address {
 }
 
 nav {
-  margin: 1rem;
-  align-self: flex-end;
   cursor: pointer;
+  background-color: white;
+  position: fixed;
+  width: 100vw;
+  color: #3b3b3b;
+  top: -100%;
+  transition: ease-out 250ms;
 }
 
-nav > ul {
+.nav-open nav {
+  top: 0;
+}
+
+.nav-open .open-nav {
+  display: none;
+}
+
+.nav-open .close-nav {
+  display: block;
+}
+
+nav ul {
   display: flex;
-  font-size: 1rem;
+  flex-direction: column;
+  align-items: stretch;
+  font-size: 1.1rem;
   list-style: none;
   text-transform: uppercase;
   text-align: center;
+  padding: 1.5em;
 }
 
-@media (min-width: 800px) {
-  nav > ul {
-    font-size: 1.8rem;
-  }
-}
-
-.nav-menu > * + * {
-  margin-left: 1em;
-}
-
-li {
+nav li {
+  display: inline-block;
   transition: var(--transition);
+  position: relative;
+  padding: 1em;
 }
 
 li:hover, li:focus {
@@ -158,24 +168,41 @@ li:hover, li:focus {
   color: #f57d58;
 }
 
-.burger-container {
-  width: 50px;
-}
-
-.burger-stripe {
-  border-top: 2px solid #f57d58;
-  padding-bottom: 6px;
-}
-
 .nav-button {
-  background-color: transparent;
-  border: none;
-  outline: none;
-  cursor: pointer;
   position: absolute;
-  top: 5vh;
-  right: 5vh;
+  top: 4.5vh;
+  right: 4.5vh;
+  display: block;
+}
+
+.open-nav {
+  position: relative;
+  transition: ease-out 1250ms;
+}
+
+.close-nav {
+  font-size: 3.5rem;
   display: none;
+  transition: ease-out 1250ms;
+  transform: translateY(-20px);
+}
+
+@media (min-width: 800px) {
+  nav {
+    background-color: transparent;
+    color: white;
+    right: 5%;
+  }
+  nav ul {
+    flex-direction: row;
+    font-size: 1.8rem;
+  }
+  nav ul > * + * {
+    margin-left: 1em;
+  }
+  .nav-button {
+    display: none;
+  }
 }
 
 .modal {
@@ -201,22 +228,25 @@ li:hover, li:focus {
   }
 }
 
-.btn {
-  text-transform: uppercase;
-  border: none;
-  border-radius: 5px;
-  transition: var(--transition);
-  cursor: pointer;
+.video-container {
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
 }
 
 .video-btn {
-  text-transform: lowercase;
   color: rgba(245, 125, 88, 0.8);
   font-size: 1.2rem;
-  font-weight: 700;
-  background-color: rgba(59, 56, 56, 0);
+  font-weight: 100;
   padding: 0.5em 1em;
-  transition: var(--transition);
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .video-btn span {
@@ -579,7 +609,7 @@ section {
 }
 
 :root {
-  --transition: all 300ms linear;
+  --transition: all 500ms ease-out;
 }
 
 *,
@@ -609,11 +639,6 @@ select {
   font: inherit;
 }
 
-.homepage-logo {
-  width: 80%;
-  max-width: 900px;
-}
-
 body, a {
   font-family: 'Hellix Thin', sans-serif;
   color: white;
@@ -627,25 +652,24 @@ button {
   display: block;
 }
 
-.home {
-  min-height: 100vh;
-}
-
-.video-container {
-  object-fit: cover;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -2;
-}
-
 h1 {
   color: white;
   font-size: 10vw;
   text-transform: uppercase;
   font-weight: 200;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  border-radius: 5px;
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.home {
+  min-height: 100vh;
 }
 
 .home::after {
@@ -657,6 +681,15 @@ h1 {
   height: 100%;
   background: rgba(59, 59, 59, 0.5);
   z-index: -1;
+}
+
+.homepage-logo {
+  width: 80%;
+  max-width: 900px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .preloader {
@@ -677,19 +710,5 @@ h1 {
 .hide-preloader {
   z-index: -999;
   visibility: hidden;
-}
-
-.flex-container {
-  display: flex;
-  align-items: center;
-  width: 95vw;
-  max-width: 1800px;
-  margin: 0 auto;
-}
-
-.homepage-content {
-  flex-direction: column;
-  justify-content: space-between;
-  min-height: 90vh;
 }
 /*# sourceMappingURL=style.css.map */

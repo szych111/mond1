@@ -1,0 +1,34 @@
+///--- video ---///
+
+.video-container {
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+}
+
+.video-btn {
+    color: rgba($base-coral, 0.8);
+    font-size: 1.2rem;
+    font-weight: 100;
+    //background-color: rgba(rgb(59, 56, 56), 0);
+    padding: 0.5em 1em;
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    span {
+        margin: 0 0.2em;
+        font-size: 1.2rem;
+    }
+}
+
+.video-btn-inactive {
+    color: rgba(white, 0.3);
+    font-size: 0.8rem;
+    cursor: default;
+}

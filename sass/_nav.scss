@@ -6,7 +6,7 @@ nav {
     color: $base-grey;
     top: -100%;
     transition: ease-out 250ms;
-    //transition: var(--transition);
+    z-index: 1;
 }
 
 .nav-open {
@@ -27,7 +27,7 @@ nav ul {
     display: flex;
     flex-direction: column;
     align-items: stretch;
-    font-size: 1.1rem;
+    font-size: 0.9rem;
     list-style: none;
     text-transform: uppercase;
     text-align: center;
@@ -52,6 +52,7 @@ li:hover, li:focus {
     top: 4.5vh;
     right: 4.5vh;
     display: block;
+    z-index: 2;
 }
 
 .open-nav {
@@ -70,10 +71,15 @@ li:hover, li:focus {
     nav {
         background-color: transparent;
         color: white;
-        right: 5%;
+        top: 0;
+        right: 0;
 
         ul {flex-direction: row;
             font-size: 1.8rem;
+
+            & li {
+                padding: 0;
+            }
 
             & > * + * {
                 margin-left: 1em;

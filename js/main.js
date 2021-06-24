@@ -46,6 +46,7 @@ const contactModal = document.querySelector('.contact-modal')
 openContact.addEventListener('click', () => {
     console.log('contact')
     contactModal.classList.add('open-modal')
+    document.body.classList.remove('nav-open')
 })
 contactClose.addEventListener('click', () => {
     contactModal.classList.remove('open-modal')
@@ -59,6 +60,7 @@ const servicesModal = document.querySelector('.services-modal')
 servicesOpen.addEventListener('click', () => {
     console.log('services')
     servicesModal.classList.add('open-modal')
+    document.body.classList.remove('nav-open')
 })
 servicesClose.addEventListener('click', () => {
     servicesModal.classList.remove('open-modal')
@@ -72,6 +74,7 @@ const portfolioModal = document.querySelector('.portfolio-modal')
 portfolioOpen.addEventListener('click', () => {
     console.log('services')
     portfolioModal.classList.add('open-modal')
+    document.body.classList.remove('nav-open')
 })
 portfolioClose.addEventListener('click', () => {
     portfolioModal.classList.remove('open-modal')
@@ -84,3 +87,4 @@ const navBurger = document.getElementById('nav-burger')
 navBurger.addEventListener('click', () => {
     document.body.classList.toggle('nav-open')
 })
+

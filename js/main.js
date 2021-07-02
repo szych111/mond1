@@ -80,6 +80,21 @@ portfolioClose.addEventListener('click', () => {
     portfolioModal.classList.remove('open-modal')
 })
 
+// team-modal 
+const teamOpen = document.getElementById('team-open')
+const teamClose = document.getElementById('team-close')
+const teamModal = document.querySelector('.team-modal')
+
+teamOpen.addEventListener('click', () => {
+    console.log('services')
+    teamModal.classList.add('open-modal')
+    document.body.classList.remove('nav-open')
+})
+teamClose.addEventListener('click', () => {
+    teamModal.classList.remove('open-modal')
+})
+
+
 ///--- nav menu toggle ---///
 
 const navBurger = document.getElementById('nav-burger')

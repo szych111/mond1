@@ -1,13 +1,20 @@
+.team-content {
+    //background-color: pink;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .team__intro {
     display: flex;
     flex-direction: column;
     padding: 0 3vw 5vmax;
     max-width: 900px;
+    //background-color: cyan;
 
     p {
         margin-bottom: 0.5em;
     }
-    // background-color: pink;
 }
 
 .intro__text {
@@ -23,11 +30,12 @@
 }
 
 .team-member__card {
-    max-width: 580px;
+    display: flex;
     margin-bottom: 10vmin;
+    //background-color: rgb(138, 69, 80);
 
     img {
-        width: 150px;
+        width: 140px;
         float: left;
         margin: 0 1em 1em 0
     }
@@ -35,19 +43,22 @@
 
 .team-member__info {
     font-size: 0.8rem;
-    //background-color: pink;
+    padding: 1em 0;
+    flex-grow: 2;
+    //background-color: green;
 
-    span {
+    .span-last-name {
         text-transform: uppercase;
     }
 
     mail {
         display: inline-block;
-        margin-bottom: 1em;
+        margin-bottom: 1.5em;
     }
 
     hr {
-        width: 40%;
+        width: 150px;
+        max-width: 50%;
         border-bottom: 0.5px solid white;
         margin-left: 0;
     }
@@ -66,17 +77,16 @@
 }
 
 @media (min-width: 600px) {
-    .team-member__card {
-        display: flex;
-        align-items: flex-start;
-    }
-
     .team-member__story {
         margin-bottom: 3em;
     }
 
     .team-member__info {
         font-size: 1rem;
+    }
+
+    mail {
+        word-break: normal;
     }
 
     .team-member-position {
@@ -99,7 +109,7 @@
     }
 
     .team-member__card {
-        flex-basis: 100%;
+        min-width: 400px;
 
         img {
         width: 200px;
@@ -112,8 +122,12 @@
         font-size: 1.5rem;
     }
 
-    .team-member__card img {
-        width: 220px;
+    .team-member__card {
+        min-width: 500px;
+
+        img {
+            width: 220px;
+        }
     }
 
     .team-member__info {

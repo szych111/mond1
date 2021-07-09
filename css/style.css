@@ -403,6 +403,12 @@ section {
   }
 }
 
+.team-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .team__intro {
   display: flex;
   flex-direction: column;
@@ -426,31 +432,34 @@ section {
 }
 
 .team-member__card {
-  max-width: 580px;
+  display: flex;
   margin-bottom: 10vmin;
 }
 
 .team-member__card img {
-  width: 150px;
+  width: 140px;
   float: left;
   margin: 0 1em 1em 0;
 }
 
 .team-member__info {
   font-size: 0.8rem;
+  padding: 1em 0;
+  flex-grow: 2;
 }
 
-.team-member__info span {
+.team-member__info .span-last-name {
   text-transform: uppercase;
 }
 
 .team-member__info mail {
   display: inline-block;
-  margin-bottom: 1em;
+  margin-bottom: 1.5em;
 }
 
 .team-member__info hr {
-  width: 40%;
+  width: 150px;
+  max-width: 50%;
   border-bottom: 0.5px solid white;
   margin-left: 0;
 }
@@ -468,15 +477,14 @@ section {
 }
 
 @media (min-width: 600px) {
-  .team-member__card {
-    display: flex;
-    align-items: flex-start;
-  }
   .team-member__story {
     margin-bottom: 3em;
   }
   .team-member__info {
     font-size: 1rem;
+  }
+  mail {
+    word-break: normal;
   }
   .team-member-position {
     font-size: 0.9rem;
@@ -494,7 +502,7 @@ section {
     margin-left: 5vw;
   }
   .team-member__card {
-    flex-basis: 100%;
+    min-width: 400px;
   }
   .team-member__card img {
     width: 200px;
@@ -504,6 +512,9 @@ section {
 @media (min-width: 1200px) {
   .intro__text {
     font-size: 1.5rem;
+  }
+  .team-member__card {
+    min-width: 500px;
   }
   .team-member__card img {
     width: 220px;

@@ -455,6 +455,7 @@ section {
 .team-member__info mail {
   display: inline-block;
   margin-bottom: 1.5em;
+  word-break: break-all;
 }
 
 .team-member__info hr {
@@ -530,42 +531,21 @@ section {
 .portfolio {
   background-color: #3b3b3b;
   padding-bottom: 5vh;
+}
+
+.portfolio-pics {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-}
-
-.portfolio__main {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 10vmax 4vw;
-}
-
-.portfolio__main h1 {
-  font-size: calc(var(--portfolio-pic)*0.4);
-  margin-bottom: 4vh;
-}
-
-.portfolio__pics {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: space-between;
-  text-align: center;
-}
-
-:root {
-  --portfolio-pic: 39vw;
 }
 
 .portfolio__pic {
-  width: var(--portfolio-pic);
-  height: var(--portfolio-pic);
+  flex-basis: 1;
+  width: 70vw;
   position: relative;
   transition: opacity ease-out 250ms;
   margin: 1vmax;
   text-align: center;
+  opacity: 0.9;
 }
 
 .portfolio__pic img {
@@ -573,7 +553,7 @@ section {
   opacity: 0.7;
 }
 
-.portfolio__pic p {
+.portfolio__pic .portfolio-pic-address {
   position: absolute;
   text-transform: uppercase;
   text-align: center;
@@ -582,8 +562,9 @@ section {
   left: 50%;
   transform: translate(-40%, -35%);
   color: white;
-  opacity: 0;
+  opacity: 1;
   margin: 0;
+  display: inline-block;
 }
 
 .portfolio__pic:hover img {
@@ -595,35 +576,20 @@ section {
 }
 
 @media (min-width: 600px) {
-  :root {
-    --portfolio-pic: 15vw;
-  }
-  .portfolio__main {
+  .portfolio-pics {
     flex-direction: row;
-    align-items: flex-end;
-    justify-content: space-between;
-    padding: 1vmax;
   }
-  .portfolio__main h1 {
-    flex-basis: 20vw;
-    margin-bottom: 0;
-    font-size: calc(var(--portfolio-pic)*0.4);
-  }
-  .portfolio__pics {
-    flex-basis: 75vw;
-  }
-}
-
-@media (min-width: 900px) {
-  .portfolio__pics {
-    flex-basis: 65vw;
+  .portfolio__pic {
+    width: 35vw;
   }
 }
 
 @media (min-width: 1200px) {
-  .portfolio__main h1 {
-    font-size: 5rem;
-    flex-basis: 28vw;
+  .portfolio__pic {
+    width: 35vw;
+  }
+  .portfolio__pic p {
+    opacity: 0;
   }
 }
 

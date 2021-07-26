@@ -21,7 +21,7 @@
     align-items: center;
 }
 
-.portfolio-pics {
+.portfolio__pics {
     display: flex;
     flex-direction: column;
 }
@@ -79,7 +79,7 @@
 }
 
 @media (min-width: 900px) {
-    .portfolio-pics {
+    .portfolio__pics {
         flex-direction: row;
     }
     .portfolio__pic {

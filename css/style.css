@@ -546,7 +546,7 @@ section {
   align-items: center;
 }
 
-.portfolio-pics {
+.portfolio__pics {
   display: flex;
   flex-direction: column;
 }
@@ -599,7 +599,7 @@ section {
 }
 
 @media (min-width: 900px) {
-  .portfolio-pics {
+  .portfolio__pics {
     flex-direction: row;
   }
   .portfolio__pic {

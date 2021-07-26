@@ -15,7 +15,7 @@ section {
   max-width: 230px;
 }
 
-.close-btn {
+.close-btn, .close-gallery {
   background-color: transparent;
   border: none;
   color: rgba($base-coral, 0.7);
@@ -29,7 +29,7 @@ section {
   }
 }
 
-.close-btn:hover {
+.close-btn:hover, .close-gallery:hover {
   color: rgba($base-coral, 1);
   transform: scale(1.1);
 }
@@ -51,7 +51,6 @@ section {
   .section__title {
     font-size: 4rem;
     margin-bottom: 4vh;
-    max-width: 10vw;
   }
 }
 

@@ -22,7 +22,7 @@ rgba(94, 83, 23, 0.5));
   justify-content: center;
   width: 95vw;
   max-width: 1600px;
-  margin: 0 auto;
+  margin-inline: auto;
 }
 
 .contact-content > * {
@@ -156,14 +156,14 @@ nav ul {
   padding: 1.5em;
 }
 
-nav li {
+.home__nav li {
   display: inline-block;
   transition: var(--transition);
   position: relative;
   padding: 1em;
 }
 
-li:hover, li:focus {
+.home__nav li:hover, .home__nav li:focus {
   transform: scale(1.1);
   font-weight: 600;
   color: #f57d58;
@@ -351,7 +351,7 @@ section {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 10vmax;
+  margin-bottom: 6vmax;
 }
 
 .logo {
@@ -378,7 +378,7 @@ section {
 }
 
 .section__title {
-  font-size: 3.5rem;
+  font-size: 2.5em;
   margin-bottom: 4vh;
 }
 
@@ -390,14 +390,14 @@ section {
     font-size: 6rem;
   }
   .section__title {
-    font-size: 4rem;
+    font-size: 4.5rem;
     margin-bottom: 4vh;
   }
 }
 
 @media (min-width: 1200px) {
   .section__title {
-    font-size: 80px;
+    font-size: 6em;
     max-width: 25vw;
   }
 }
@@ -633,7 +633,7 @@ section {
 }
 
 .portfolio-pics {
-  margin: 0 auto;
+  margin-inline: auto;
   padding: 5vmax;
   position: relative;
   display: none;
@@ -702,6 +702,8 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-inline: auto;
+  text-align: center;
 }
 
 .przasnyska-demos {
@@ -721,6 +723,88 @@ section {
   .przasnyska h1 {
     font-size: 4em;
   }
+}
+
+.slider-modal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.slider-modal .close-btn {
+  position: absolute;
+  top: 1vmax;
+  right: 1vmax;
+}
+
+.carousel {
+  width: 60%;
+  max-width: 1000px;
+  background-color: pink;
+}
+
+.carousel img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (min-height: 600px) {
+  .carousel {
+    width: 80%;
+    max-width: 1000px;
+  }
+}
+
+.carousel__btn {
+  color: #f57d58;
+  font-size: 3em;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.carousel__btn--left {
+  left: 5vw;
+}
+
+.carousel__btn--right {
+  right: 5vw;
+}
+
+.carousel__nav {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.carousel__indicator {
+  margin: 0 12px;
+  background-color: #3b3b3b;
+  border: 0;
+  width: 10vw;
+  max-width: 150px;
+}
+
+.carousel__demo {
+  width: 105%;
+  float: left;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.current-demo {
+  opacity: 0.5;
+}
+
+.is-hidden {
+  display: none;
 }
 
 @font-face {

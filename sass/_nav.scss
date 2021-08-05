@@ -34,17 +34,17 @@ nav ul {
     padding: 1.5em;
 }
 
-nav li {
+.home__nav li {
     display: inline-block;
     transition: var(--transition);
     position: relative;
     padding: 1em;
-}
 
-li:hover, li:focus {
-    transform: scale(1.1);
-    font-weight: 600;
-    color: $base-coral;
+    &:hover, &:focus {
+        transform: scale(1.1);
+        font-weight: 600;
+        color: $base-coral;
+    }
 }
 
 .nav-button {

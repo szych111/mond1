@@ -24,57 +24,57 @@ window.addEventListener('load', function(){
     preloader.classList.add('hide-preloader')
 })
 
-//contact-modal 
-const openContact = document.getElementById('contact-open')
-const contactClose = document.getElementById('contact-close')
-const contactModal = document.querySelector('.contact-modal')
+// //contact-modal 
+// const openContact = document.getElementById('contact-open')
+// const contactClose = document.getElementById('contact-close')
+// const contactModal = document.querySelector('.contact-modal')
 
-openContact.addEventListener('click', () => {
-    contactModal.classList.add('open-modal')
-    document.body.classList.remove('nav-open')
-})
-contactClose.addEventListener('click', () => {
-    contactModal.classList.remove('open-modal')
-})
+// openContact.addEventListener('click', () => {
+//     contactModal.classList.add('open-modal')
+//     document.body.classList.remove('nav-open')
+// })
+// contactClose.addEventListener('click', () => {
+//     contactModal.classList.remove('open-modal')
+// })
 
-// services-modal 
-const servicesOpen = document.getElementById('services-open')
-const servicesClose = document.getElementById('services-close')
-const servicesModal = document.querySelector('.services-modal')
+// // services-modal 
+// const servicesOpen = document.getElementById('services-open')
+// const servicesClose = document.getElementById('services-close')
+// const servicesModal = document.querySelector('.services-modal')
 
-servicesOpen.addEventListener('click', () => {
-    servicesModal.classList.add('open-modal')
-    document.body.classList.remove('nav-open')
-})
-servicesClose.addEventListener('click', () => {
-    servicesModal.classList.remove('open-modal')
-})
+// servicesOpen.addEventListener('click', () => {
+//     servicesModal.classList.add('open-modal')
+//     document.body.classList.remove('nav-open')
+// })
+// servicesClose.addEventListener('click', () => {
+//     servicesModal.classList.remove('open-modal')
+// })
 
-// portfolio-modal 
-const portfolioOpen = document.getElementById('portfolio-open')
-const portfolioClose = document.getElementById('portfolio-close')
-const portfolioModal = document.querySelector('.portfolio-modal')
+// // portfolio-modal 
+// const portfolioOpen = document.getElementById('portfolio-open')
+// const portfolioClose = document.getElementById('portfolio-close')
+// const portfolioModal = document.querySelector('.portfolio-modal')
 
-portfolioOpen.addEventListener('click', () => {
-    portfolioModal.classList.add('open-modal')
-    document.body.classList.remove('nav-open')
-})
-portfolioClose.addEventListener('click', () => {
-    portfolioModal.classList.remove('open-modal')
-})
+// portfolioOpen.addEventListener('click', () => {
+//     portfolioModal.classList.add('open-modal')
+//     document.body.classList.remove('nav-open')
+// })
+// portfolioClose.addEventListener('click', () => {
+//     portfolioModal.classList.remove('open-modal')
+// })
 
-// team-modal 
-const teamOpen = document.getElementById('team-open')
-const teamClose = document.getElementById('team-close')
-const teamModal = document.querySelector('.team-modal')
+// // team-modal 
+// const teamOpen = document.getElementById('team-open')
+// const teamClose = document.getElementById('team-close')
+// const teamModal = document.querySelector('.team-modal')
 
-teamOpen.addEventListener('click', () => {
-    teamModal.classList.add('open-modal')
-    document.body.classList.remove('nav-open')
-})
-teamClose.addEventListener('click', () => {
-    teamModal.classList.remove('open-modal')
-})
+// teamOpen.addEventListener('click', () => {
+//     teamModal.classList.add('open-modal')
+//     document.body.classList.remove('nav-open')
+// })
+// teamClose.addEventListener('click', () => {
+//     teamModal.classList.remove('open-modal')
+// })
 
 ///--- nav menu toggle ---///
 

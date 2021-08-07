@@ -623,108 +623,6 @@ section {
   }
 }
 
-.portfolio-gallery header {
-  margin-bottom: 1vmax;
-}
-
-.gallery-slider {
-  display: flex;
-  flex-direction: column;
-}
-
-.portfolio-pics {
-  margin-inline: auto;
-  padding: 5vmax;
-  position: relative;
-  display: none;
-}
-
-.portfolio-pics img {
-  width: 50%;
-  max-width: 1000px;
-}
-
-.portfolio-pics figcaption {
-  margin-top: 1em;
-}
-
-.gallery-prev,
-.gallery-next {
-  cursor: pointer;
-  position: absolute;
-  top: 35%;
-  width: auto;
-  padding: 1em;
-  color: white;
-  font-family: inherit;
-  font-weight: 100;
-  font-size: 1.2em;
-}
-
-.gallery-next {
-  right: 0;
-}
-
-.gallery-prev {
-  left: 0;
-}
-
-.gallery-demos {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.gallery-demos * {
-  flex-grow: 1;
-  width: 30vw;
-  max-width: 200px;
-  margin: 1vmax;
-}
-
-@media (min-width: 900px) {
-  .gallery-prev,
-  .gallery-next {
-    top: 35%;
-    font-size: 40px;
-  }
-}
-
-.przasnyska header {
-  margin-bottom: 2.5vmax;
-}
-
-.przasnyska h1 {
-  font-size: 2em;
-}
-
-.przasnyska-gallery {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-inline: auto;
-  text-align: center;
-}
-
-.przasnyska-demos {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.przasnyska-demos img {
-  width: 40%;
-  max-width: 450px;
-  display: inline-block;
-  margin: 1vmax;
-}
-
-@media (min-width: 700px) {
-  .przasnyska h1 {
-    font-size: 4em;
-  }
-}
-
 .slider-modal {
   display: flex;
   flex-direction: column;
@@ -741,21 +639,26 @@ section {
 
 .carousel {
   width: 60%;
-  max-width: 1000px;
-  background-color: pink;
-}
-
-.carousel img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  max-width: 800px;
+  max-height: 90vh;
+  padding: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 @media (min-height: 600px) {
   .carousel {
-    width: 80%;
-    max-width: 1000px;
+    width: 100%;
+    height: 800px;
   }
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 .carousel__btn {
@@ -781,6 +684,12 @@ section {
 .carousel__nav {
   display: flex;
   justify-content: center;
+  margin-bottom: auto;
+  margin-top: auto;
+  position: absolute;
+  bottom: 5vh;
+  left: 50%;
+  transform: translateX(-50%);
   padding: 10px;
 }
 

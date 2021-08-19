@@ -62,7 +62,3 @@ prevBtn.addEventListener('click', e => {
     updateDemo(currentDemo, prevDemo)
     hideShowArrows(carouselDemos, prevBtn, nextBtn, prevIndex)
 })
-
-console.log('hello')
-const slider = document.querySelector('.slider-modal')
-console.log(slider.children)

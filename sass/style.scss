@@ -8,6 +8,7 @@
 @import 'team';
 @import 'portfolio';
 @import 'slider';
+@import 'contact-form-reply';
 
 @font-face {
   font-family: Hellix;
@@ -45,13 +46,15 @@ select {
   font: inherit;
 }
 
-body, a {
+body {
     font-family: 'Hellix Thin', sans-serif;
     color: white;
+    background-color: $base-grey;
 }
 
 a {
     text-decoration: none;
+    color: inherit;
 }
 
 button {

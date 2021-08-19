@@ -1,0 +1,24 @@
+body {
+    background-color: $base-grey;
+}
+
+.greeting-container {
+    width: 100vw;
+    padding: 15vmax 5vmin;
+    text-align: center;
+}
+
+.greeting__text {
+    margin-bottom: 3em;
+    line-height: 1.5;
+}
+
+@media (min-width: 900px) {
+    .greeting__text {
+        font-size: 1.5em;
+    }
+
+    .greeting-container a {
+        font-size: 1.2em;
+    }
+}

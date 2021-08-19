@@ -72,7 +72,8 @@ address {
     text-transform: uppercase;
 }
 
-.contact-form-btn:hover {
+.contact-form-btn:hover, 
+.contact-form-btn:focus {
     color: rgba($base-coral, 1);
     transform: scale(1.1);
 }

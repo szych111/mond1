@@ -5,11 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Document</title>
+    <link rel="icon" type="img/png" href="./img/mondestat-favicon.png">
+    <title>MONDESTATE</title>
 </head>
 <body>
     <?php
-    $first_name = htmlspecialchars($_POST["first_name"]);
+    $first_name = ucfirst(htmlspecialchars($_POST["first_name"]));
     $last_name = htmlspecialchars($_POST["last_name"]);
     $visitor_email = htmlspecialchars($_POST["visitor_email"]);
     $message = htmlspecialchars($_POST["message"]);
@@ -25,7 +26,9 @@
 
     ?>
 
-    <p>Dziękujemy za wiadomość, wkrótce skontaktujemy się z Tobą  <?=$_POST['first_name'] ?>.</p>
-    <a href="index.php">Reset</a>
+    <div class="greeting-container">
+        <p class="greeting__text">Dziękujemy za wiadomość <?= $first_name?>, wkrótce skontaktujemy się z Tobą.</p>
+        <a href="index.html" class="contact-form-btn">Powrót do strony głównej</a>
+    </div>
 </body>
 </html>

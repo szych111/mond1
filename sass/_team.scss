@@ -66,6 +66,10 @@
     }
 }
 
+.team-member__phone {
+    margin-bottom: 0.8em;
+}
+
 .team-member__story {
     margin-bottom: 6em;
 }
@@ -103,8 +107,10 @@
 
     .team-members {
         flex-direction: row;
+        flex-wrap: wrap;
+        max-width: 1500px;
 
-        & > *+* {
+        & > * {
             margin-left: 5vw;
         }
         
@@ -125,7 +131,7 @@
     }
 
     .team-member__card {
-        min-width: 500px;
+        width: 550px;
 
         img {
             width: 220px;

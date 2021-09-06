@@ -465,6 +465,10 @@ section {
   margin-left: 0;
 }
 
+.team-member__phone {
+  margin-bottom: 0.8em;
+}
+
 .team-member__story {
   margin-bottom: 6em;
 }
@@ -498,8 +502,10 @@ section {
   }
   .team-members {
     flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 1500px;
   }
-  .team-members > * + * {
+  .team-members > * {
     margin-left: 5vw;
   }
   .team-member__card {
@@ -515,7 +521,7 @@ section {
     font-size: 1.5rem;
   }
   .team-member__card {
-    min-width: 500px;
+    width: 550px;
   }
   .team-member__card img {
     width: 220px;
